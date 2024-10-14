@@ -1,11 +1,11 @@
 import React from "react";
-import Navbar from "../components/navbar";
-import GetInTouch from "../components/getInTuoch";
-import Footer from "../components/footer";
-import Switcher from "../components/switcher";
-import Detailservice from "../components/Detaileservice";
+import Navbar from "./navbar";
+import GetInTouch from "./getInTuoch";
+import Footer from "./footer";
+import Switcher from "./switcher";
+import Detailservice from "./Detaileservice";
 import '../../node_modules/react-modal-video/scss/modal-video.scss';
-import WhatsAppFloatingButton from '../components/WhatsAppFloatingButton';
+import WhatsAppFloatingButton from './WhatsAppFloatingButton';
 import { useParams } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 export default function Service(){

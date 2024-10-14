@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "../components/navbar";
-import BlogDetail from "../components/BlogDetail";
-import Footer from "../components/foooter";
+import Navbar from "./navbar";
+import BlogDetail from "./BlogDetail";
+import Footer from "./foooter";
 import { Helmet } from "react-helmet-async";
 export default function IndexFive() {
 

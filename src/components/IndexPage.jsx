@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
-import Footer from '../components/foooter';
-import About from "../components/about";
-import Services from "../components/services";
-import AgencyTab from "../components/agencyTab";
-import Blogs from "../components/blog";
-import GetInTouch from "../components/getInTuoch";
-import Navbar from '../components/navbar';
-import WhatsAppFloatingButton from '../components/WhatsAppFloatingButton';
+import Footer from './foooter';
+import About from "./about";
+import Services from "./services";
+import AgencyTab from "./agencyTab";
+import Blogs from "./blog";
+import GetInTouch from "./getInTuoch";
+import Navbar from './navbar';
+import WhatsAppFloatingButton from './WhatsAppFloatingButton';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import styled from "styled-components";
@@ -115,12 +115,12 @@ const ImageWrapper = styled.div`
 const loadClientData = (lang) => {
   switch (lang) {
     case 'fr':
-      return import('../components/locales/fr/translation').then(module => module.Titlefr);
+      return import('./locales/fr/translation').then(module => module.Titlefr);
     case 'ar':
-      return import('../components/locales/ar/translation').then(module => module.TitleAR);
+      return import('./locales/ar/translation').then(module => module.TitleAR);
     case 'en':
     default:
-      return import('../components/locales/en/translation').then(module => module.TitleEN);
+      return import('./locales/en/translation').then(module => module.TitleEN);
   }
 };
 

@@ -1,9 +1,9 @@
 import React from "react";
-import Navbar from "../components/navbar";
-import Formation from "../components/formation";
-import Footer from "../components/foooter";
-import WhatsAppFloatingButton from '../components/WhatsAppFloatingButton';
-import Switcher from "../components/switcher";
+import Navbar from "./navbar";
+import Formation from "./formation";
+import Footer from "./foooter";
+import WhatsAppFloatingButton from './WhatsAppFloatingButton';
+import Switcher from "./switcher";
 import { Helmet } from "react-helmet-async";
 
 
