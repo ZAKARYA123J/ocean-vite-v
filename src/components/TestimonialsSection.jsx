@@ -40,7 +40,7 @@ const testimonials = [
   
 ];
 
-const DynamicTestimonialsSection =React( () => {
+const DynamicTestimonialsSection =React.memo( () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {

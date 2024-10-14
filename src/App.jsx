@@ -2,6 +2,7 @@ import "./App.css";
 import "./assets/css/tailwind.css";
 import "./assets/css/materialdesignicons.min.css";
 import "leaflet/dist/leaflet.css";
+import React from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Index from "./components/IndexPage.jsx";
 import Formation from "./components/formationPage.jsx";
