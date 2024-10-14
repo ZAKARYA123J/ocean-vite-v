@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./navbar";
 import GetInTouch from "./getInTuoch";
-import Footer from "./footer";
+import Footer from "./foooter";
 import Switcher from "./switcher";
 import Detailservice from "./Detaileservice";
 import '../../node_modules/react-modal-video/scss/modal-video.scss';
