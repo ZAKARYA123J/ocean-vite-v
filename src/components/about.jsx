@@ -18,7 +18,7 @@ const loadClientData = (lang) => {
   }
 };
 
-export default function About() {
+const About = React.memo( function About() {
   const [serviceAbout, setServiceAbout] = useState([]);
   const { i18n, t } = useTranslation();
 
@@ -108,4 +108,5 @@ export default function About() {
       </div>))}
     </section>
   );
-}
+})
+export default About

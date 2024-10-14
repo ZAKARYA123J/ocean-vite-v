@@ -25,7 +25,7 @@ const loadClientData = async (lang) => {
     return [];
   }
 };
-const NursingServicesPage = () => {
+const NursingServicesPage =React.memo( () => {
   const videoRef = useRef(null);
   const [nursedata, setNurseData] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -117,6 +117,6 @@ const NursingServicesPage = () => {
       <Footer />
     </div></>
   );
-};
+});
 
 export default NursingServicesPage;

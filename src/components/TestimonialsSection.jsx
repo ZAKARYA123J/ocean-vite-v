@@ -40,7 +40,7 @@ const testimonials = [
   
 ];
 
-const DynamicTestimonialsSection = () => {
+const DynamicTestimonialsSection =React( () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -96,6 +96,6 @@ const DynamicTestimonialsSection = () => {
       </div>
     </section>
   );
-};
+});
 
 export default DynamicTestimonialsSection;

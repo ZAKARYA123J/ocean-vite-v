@@ -148,7 +148,7 @@ const faqs = [
   { question: 'faq.q5', answer: 'faq.a5' }
 ];
 
-const TeamGlass = () => {
+const TeamGlass = React.memo(() => {
   const { t, i18n } = useTranslation();
   const [selectedMember, setSelectedMember] = useState(null);
   const [activeFaq, setActiveFaq] = useState(null);
@@ -349,6 +349,6 @@ console.log("ds")
     </div>
     </>
   );
-};
+});
 
 export default TeamGlass;

@@ -122,7 +122,7 @@ const teamMembers = [
 
 
 
-const TeamPage = () => {
+const TeamPage =React.memo( () => {
   const [selectedMember, setSelectedMember] = useState(null);
   const [developpement, setSdeveloppment] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -266,6 +266,6 @@ const TeamPage = () => {
       {selectedMember && <Modal member={selectedMember} onClose={closeModal} />}
     </div>
   );
-};
+});
 
 export default TeamPage;

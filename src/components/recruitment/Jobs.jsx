@@ -172,7 +172,7 @@ const ButtonLink = styled.a`
   }
 `;
 
-const JobListings = () => {
+const JobListings = React.memo(() => {
   const [selectedType, setSelectedType] = useState('All');
   const { type } = useParams();
   const navigate = useNavigate();
@@ -375,6 +375,6 @@ const JobListings = () => {
 </Modal>
     </>
   );
-};
+});
 
 export default JobListings;

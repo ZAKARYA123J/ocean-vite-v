@@ -18,7 +18,7 @@ import { HelmetProvider } from "react-helmet-async";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { AnimatePresence, motion } from "framer-motion";
 import TeamGlass from "./components/TeamGlass";
-function App() {
+const App=React.memo( function App() {
   const location = useLocation();
 
   const pageVariants = {
@@ -236,6 +236,6 @@ function App() {
       <SpeedInsights />
     </HelmetProvider>
   );
-}
+})
 
 export default App;

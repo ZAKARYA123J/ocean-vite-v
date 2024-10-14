@@ -13,7 +13,7 @@ const fetchAllGalleries = async () => {
     return data;
 };
 
-const GalleryDetail = () => {
+const GalleryDetail = React.memo(() => {
     const { i18n, t } = useTranslation();
     const [galleryAlbum, setGalleryAlbum] = useState(null);
     const { id } = useParams(); 
@@ -66,6 +66,6 @@ const GalleryDetail = () => {
             <Footer />
         </div>
     );
-};
+});
 
 export default GalleryDetail;
