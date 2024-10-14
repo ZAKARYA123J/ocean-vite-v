@@ -54,7 +54,7 @@ const App=React.memo( function App() {
     <HelmetProvider>
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
-          {/* Pages with transitions */}
+    
           <Route
             path="/"
             element={

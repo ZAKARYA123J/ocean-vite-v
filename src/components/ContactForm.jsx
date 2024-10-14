@@ -1,6 +1,6 @@
 import React, { useState ,useEffect} from "react";
 import { useTranslation } from "react-i18next";
-import nurseImage from "../assets/images/done/TeamDev/service.png"; // Ensure the correct path
+const nurseImage="https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Site%20ocean%2Fservice.png?alt=media&token=b54504fc-6722-431f-8787-d75218233c1b"
 import { FaUser, FaEnvelope, FaPhone, FaStethoscope } from "react-icons/fa"; // Medical icons
   const loadClientData = async (lang) => {
     try {

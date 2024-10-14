@@ -56,7 +56,7 @@ import form from '../../../assets/images/form.pdf'
 //     },
 //     // Add other members...
 //   ];
-import heroImage1 from '../../../assets/images/done/TeamDev/service.png';
+const heroImage1 = "https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Site%20ocean%2Fservice.png?alt=media&token=b54504fc-6722-431f-8787-d75218233c1b"
   export const servicesAR = [
     {
       title: "الأمان",

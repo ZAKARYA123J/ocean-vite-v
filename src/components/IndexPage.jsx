@@ -13,40 +13,17 @@ import "aos/dist/aos.css";
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
+import LazyLoad from 'react-lazyload';
 
 // Import images directly
-import heroImage1 from '../assets/images/done/TeamDev/service.png';
-import heroImage2 from '../assets/images/done/TeamDev/service1.png';
-import heroImage4 from '../assets/images/done/TeamDev/service2.png';
+// import heroImage1 from '../assets/images/done/TeamDev/service.png';
+// import heroImage2 from '../assets/images/done/TeamDev/service1.png';
+// import heroImage4 from '../assets/images/done/TeamDev/service2.png';
+const heroImage1 = 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Site%20ocean%2Fservice.png?alt=media&token=b54504fc-6722-431f-8787-d75218233c1b';
+const heroImage2 = 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Site%20ocean%2Fservice1.png?alt=media&token=0d65089b-9802-41ec-800d-ab41f867dab0';
+const heroImage4 = 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Site%20ocean%2Fservice2.png?alt=media&token=0a170203-2f38-4d56-8309-030c8b87e0d3';
 
 // Styled Components
-const CTAButton = styled.button`
-  background-color: #1d4ed8;
-  color: #ffffff;
-  padding: 14px 28px;
-  margin-top: 20px;
-  border-radius: 25px;
-  border: none;
-  font-size: 16px;
-  font-weight: bold;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
-  box-shadow: 0 5px 15px rgba(29, 78, 216, 0.4);
-  cursor: pointer;
-
-  &:hover {
-    background-color: #1e40af;
-    transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(29, 78, 216, 0.5);
-  }
-
-  &:active {
-    transform: translateY(1px);
-    box-shadow: 0 3px 10px rgba(29, 78, 216, 0.3);
-  }
-`;
 
 const Section = styled.section`
   display: flex;
@@ -202,8 +179,11 @@ const loadClientData = (lang) => {
           
           </TextBlock>
           <ImageWrapper data-aos="fade-left" className="" isVisible>
-            <img src={images[currentImage]} alt="Design Team" />
-          </ImageWrapper>
+  <LazyLoad height={400} offset={100} once>
+    <img src={images[currentImage]} alt="Design Team" />
+  </LazyLoad>
+</ImageWrapper>
+
         </ContentWrapper>
       </Section>
 
