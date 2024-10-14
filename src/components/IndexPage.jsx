@@ -1,4 +1,4 @@
-import React, { useEffect, useState , lazy, Suspense} from "react";
+import React, { useEffect, useState , lazy, Suspense,useMemo } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import Footer from './foooter';
 const About = lazy(() => import("./about"));
