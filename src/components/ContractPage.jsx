@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Navbar from './navbar';
-import Footer from './footer';
+import Footer from './foooter';
 import Modal from './Modall';
 import LeafletMap from './LeafletMap';
 import {
