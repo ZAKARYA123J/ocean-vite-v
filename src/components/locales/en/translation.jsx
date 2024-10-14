@@ -49,10 +49,7 @@ import recrutinter from '../../../assets/images/service/recrutinter2.png'
 import form from '../../../assets/images/form.pdf'
 
 const heroImage1 = "https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Site%20ocean%2Fservice.png?alt=media&token=b54504fc-6722-431f-8787-d75218233c1b"
-// export const teamTitle = "Meet Our Development Team";
-// export const teamDescription = "We are a passionate team of experts dedicated to crafting innovative solutions. Explore more about each team member below and learn about the technologies they excel in.";
-// export const membersTitle = "Our Team Members";
-// export const viewDetails = "View Details";
+
 
 export const clientDataEN = [
     {

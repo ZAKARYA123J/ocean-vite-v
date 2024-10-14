@@ -697,78 +697,7 @@ export const placementfr = [
     }
 
 ]
-export const GalleryFR = [
-    {
-        id: 1,
-        title: "Bienvenue dans notre galerie !",
-        desc: "Découvrez la créativité et la passion qui se cachent derrière notre travail à travers ces images. Appréciez la vue !",
-        image: "https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Gallery%2Fevenement%20-%20infermiere%202024-06-02%2F2.jpg?alt=media&token=2edf1832-c447-46f8-88af-b496cbaa46fe",
-        numberimage: "10 images",
-        datealbum: " 12-12-2024",
-        titlealbum: "Événement - Infirmières",
-        img: [
-            { alt: 'image1', url: 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Gallery%2Fevenement%20-%20infermiere%202024-06-02%2F1.jpg?alt=media&token=e00fef12-3166-4135-ba8e-cc244533f9c9' },
-            { alt: 'image2', url: 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Gallery%2Fevenement%20-%20infermiere%202024-06-02%2F2.jpg?alt=media&token=2edf1832-c447-46f8-88af-b496cbaa46fe' },
-            { alt: "image3", url: 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Gallery%2Fevenement%20-%20infermiere%202024-06-02%2F3.jpg?alt=media&token=1ee28e5c-4382-43a8-8486-70a300389152' },
-            { alt: "image4", url: 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Gallery%2Fevenement%20-%20infermiere%202024-06-02%2F4.jpg?alt=media&token=c743a9a4-fd9f-402a-aac8-2a43344d72c8' },
-            { alt: "image5", url: 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Gallery%2Fevenement%20-%20infermiere%202024-06-02%2F5.jpg?alt=media&token=3db9b4fe-05de-49e4-a3ba-0c56756ab4b9' },
-            { alt: "image6", url: 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Gallery%2Fevenement%20-%20infermiere%202024-06-02%2F6.jpg?alt=media&token=cd3f5727-dd69-495d-be36-a476990c0a1e' },
-            { alt: "image7", url: 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Gallery%2Fevenement%20-%20infermiere%202024-06-02%2F7.jpg?alt=media&token=0832fc09-a5ec-4a4c-9a71-e6463c6d9244' },
-            { alt: "image8", url: 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Gallery%2Fevenement%20-%20infermiere%202024-06-02%2F8.jpg?alt=media&token=8addc46f-e121-4456-a129-5e44f4bff1c9' },
-            { alt: "image9", url: 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Gallery%2Fevenement%20-%20infermiere%202024-06-02%2F9.jpg?alt=media&token=530b17a3-fc1e-4e22-99ec-d8cfa51f71b4' },
-            { alt: "image10", url: 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Gallery%2Fevenement%20-%20infermiere%202024-06-02%2F10.jpg?alt=media&token=f840572c-7b17-42da-a413-565daf589f3e' },
-        ]
-    },
-    {
-        id: 2,
-        image: "https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Gallery%2FglassCleaning-team1%2F1.png?alt=media&token=42c92a0a-9bfe-4b1e-8bb2-5799ba69a1ee",
-        numberimage: "5 images",
-        datealbum: "12-12-2024",
-        titlealbum: "équipe de nettoyage des vitres ",
-        img: [
-            { alt: 'image1', url: 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Gallery%2FglassCleaning-team1%2F6.jpg?alt=media&token=a6ef683e-9250-4147-acb2-b6a538f16790' },
-            { alt: 'image2', url: 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Gallery%2FglassCleaning-team1%2F2.jpg?alt=media&token=89f41d86-0294-4ac9-a646-e8127f751d4a' },
-            { alt: 'image3', url: 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Gallery%2FglassCleaning-team1%2F3.jpg?alt=media&token=d9c0d25e-8db6-4ac7-b07d-7641dd174f15' },
-            { alt: 'image4', url: 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Gallery%2FglassCleaning-team1%2F4.jpg?alt=media&token=8e6de772-41b2-4905-aa7e-8f81d3d73c86' },
-            { alt: 'image5', url: 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Gallery%2FglassCleaning-team1%2F5.jpg?alt=media&token=083fe0ff-6226-492c-9974-3f8423efd177' },
-        ]
-    },
-    {
-        id: 3,
-        image: "https://i.imgur.com/alQ7GWW.jpeg",
-        numberimage: "27 images",
-        datealbum: "12-12-2024",
-        titlealbum: "Photos du centre ",
-        img: [
-            { alt: 'image1', url: 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Gallery%2FCenter-pictures%2FIMG_4075.jpg?alt=media&token=0fbbc107-22b2-4fed-bbfb-f680799d7075' },
-            { alt: 'image2', url: 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Gallery%2FCenter-pictures%2FIMG_4076.jpg?alt=media&token=4c3ee7dd-e27e-468d-8917-980f9423b292' },
-            { alt: 'image3', url: 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Gallery%2FCenter-pictures%2FIMG_4079.jpg?alt=media&token=da9ea1e6-91f5-4e5d-8fa5-af4503e5eff5' },
-            { alt: 'image4', url: 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Gallery%2FCenter-pictures%2FIMG_4080.jpg?alt=media&token=7ef19b40-51b6-4aca-b2b6-d950aebdcbd0' },
-            { alt: 'image5', url: 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Gallery%2FCenter-pictures%2FIMG_4083.jpg?alt=media&token=2fd8f1ee-3826-46eb-995f-86ac7641fda6' },
-            { alt: 'image6', url: 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Gallery%2FCenter-pictures%2FIMG_4084.jpg?alt=media&token=0cf65c9e-d52f-491d-840e-11a43c5d1f70' },
-            { alt: 'image7', url: 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Gallery%2FCenter-pictures%2FIMG_4085.jpg?alt=media&token=a291f227-32d8-44be-ae30-f67e25bebf1f' },
-            { alt: 'image8', url: 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Gallery%2FCenter-pictures%2FIMG_4086.jpg?alt=media&token=a917d76e-03a1-4d1f-93b7-f68491b61d8b' },
-            { alt: 'image9', url: 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Gallery%2FCenter-pictures%2FIMG_4088.jpg?alt=media&token=a47dee19-cee1-4ccc-a3d1-c9c9f85bb833' },
-            { alt: 'image10', url: 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Gallery%2FCenter-pictures%2FIMG_4089.jpg?alt=media&token=ccdf637c-b9dd-462f-a7d3-3a4fb32ed37f' },
-            { alt: 'image11', url: 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Gallery%2FCenter-pictures%2FIMG_4090.jpg?alt=media&token=4100faca-4836-46bf-b0e9-2ba295540019' },
-            { alt: 'image12', url: 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Gallery%2FCenter-pictures%2FIMG_4091.jpg?alt=media&token=fc57e36f-28bd-47c5-aa8e-822cd088c906' },
-            { alt: 'image13', url: 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Gallery%2FCenter-pictures%2FIMG_4092.jpg?alt=media&token=74d75869-278f-4f3b-bd04-9ef4419c5b93' },
-            { alt: 'image14', url: 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Gallery%2FCenter-pictures%2FIMG_4093.jpg?alt=media&token=c3efdf66-6e8e-4913-a027-413e5db4be98' },
-            { alt: 'image15', url: 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Gallery%2FCenter-pictures%2FIMG_4094.jpg?alt=media&token=3b685692-20e7-4b17-a850-4665d25f5d4f' },
-            { alt: 'image16', url: 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Gallery%2FCenter-pictures%2FIMG_4095.jpg?alt=media&token=9f76d06d-02ca-4970-82e9-459ad1f7ba49' },
-            { alt: 'image17', url: 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Gallery%2FCenter-pictures%2FIMG_4096.jpg?alt=media&token=8906c50e-9cd9-414c-bf53-55fa1eb2a400' },
-            { alt: 'image18', url: 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Gallery%2FCenter-pictures%2FIMG_4097.jpg?alt=media&token=1d2807bf-78f9-4740-9e13-c80cca55c584' },
-            { alt: 'image19', url: 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Gallery%2FCenter-pictures%2FIMG_4098.jpg?alt=media&token=a2ae568e-d258-4db4-a418-f5a87cf7cb84' },
-            { alt: 'image20', url: 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Gallery%2FCenter-pictures%2FIMG_4099.jpg?alt=media&token=a737a81f-e776-4d3d-8f99-4e833a1e10e4' },
-            { alt: 'image21', url: 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Gallery%2FCenter-pictures%2FIMG_4100.jpg?alt=media&token=4cd635f4-66d8-4971-b6e5-a8f76f63cb6d' },
-            { alt: 'image22', url: 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Gallery%2FCenter-pictures%2FIMG_4102.jpg?alt=media&token=86e6047e-7132-46a0-aafb-d4c87fdfbe6d' },
-            { alt: 'image23', url: 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Gallery%2FCenter-pictures%2FIMG_4105.jpg?alt=media&token=d8ee1dc3-59b9-4ef9-819f-0df491aeb3a3' },
-            { alt: 'image24', url: 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Gallery%2FCenter-pictures%2FIMG_4106.jpg?alt=media&token=f7966a7d-ec7b-4de7-8a3c-371e470b163d' },
-        ]
-    },
 
-
-]
 export const footerDataFr = {
     "socialLinks": [ // Changed from array to object
         { "id": 1, "label": "Facebook", "to": "https://www.facebook.com/the.ocean.connecting/" },
@@ -841,7 +770,7 @@ export const footerDataFr = {
         "message": "Nous vous remercions de votre visite sur notre site web et vous souhaitons la bienvenue à ",
 
     }
-}; // Changed from array to object
+}; 
 
 
 

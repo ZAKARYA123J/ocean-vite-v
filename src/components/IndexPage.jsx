@@ -149,10 +149,7 @@ const loadClientData = (lang) => {
                 <span key={index}>{i18n.t(item.Title)}</span>
               ))}
             </h1>
-            {/* <p>
-              Elevate your business presence with our innovative design solutions
-              for global recruitment and training.
-            </p> */}
+          
             <div className="flex justify-center md:justify-start space-x-4">
   {clientData.map((item, index) => (
     <div key={index} className="sm:ml-20 sm:mb-20">
