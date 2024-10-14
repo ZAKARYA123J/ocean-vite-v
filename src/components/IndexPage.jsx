@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState , lazy, Suspense} from "react";
 import { Link as ScrollLink } from "react-scroll";
 import Footer from './foooter';
-import About from "./about";
-import Services from "./services";
-import AgencyTab from "./agencyTab";
-import Blogs from "./blog";
-import GetInTouch from "./getInTuoch";
+const About = lazy(() => import("./about"));
+const Services = lazy(() => import("./services"));
+const AgencyTab = lazy(() => import("./agencyTab"));
+const Blogs = lazy(() => import("./blog"));
+const GetInTouch = lazy(() => import("./getInTuoch"));
 import Navbar from './navbar';
 import WhatsAppFloatingButton from './WhatsAppFloatingButton';
 import AOS from "aos";
@@ -130,7 +130,7 @@ const loadClientData = (lang) => {
   const [currentImage, setCurrentImage] = useState(0);
 
   // List of images for automatic switching
-  const images = [heroImage1, heroImage2, heroImage4];
+  const images = useMemo(() => [heroImage1, heroImage2, heroImage4], []);
 
   useEffect(() => {
     loadClientData(i18n.language).then(data => setClientData(data));
@@ -147,16 +147,15 @@ const loadClientData = (lang) => {
 
   // Automatically switch images every 3 seconds
   useEffect(() => {
-    const interval = setInterval(() => {
+    const timeout = setTimeout(() => {
       setCurrentImage((prevImage) => (prevImage + 1) % images.length);
-    }, 3000); // Change image every 3 seconds
-
-    // Cleanup interval on component unmount
-    return () => clearInterval(interval);
-  }, [images.length]);
-
+    }, 3000);
+    
+    return () => clearTimeout(timeout);
+  }, [currentImage, images.length]);
+  
   return (
-    <>
+    <Suspense>
       <Helmet>
         <title>Home | Ocean Connecting</title>
         <meta name="description" content="We specialize in global job placement and document assistance, offering tailored support in multiple languages." />
@@ -215,7 +214,7 @@ const loadClientData = (lang) => {
       <GetInTouch />
       <WhatsAppFloatingButton />
       <Footer />
-    </>
+      </Suspense>
   );
 })
 export default Index
