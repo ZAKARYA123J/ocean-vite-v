@@ -155,7 +155,7 @@ const loadClientData = (lang) => {
             </p> */}
             <div className="flex justify-center md:justify-start space-x-4">
   {clientData.map((item, index) => (
-    <div key={index}>
+    <div key={index} className="sm:ml-20 sm:mb-20">
       <ScrollLink
         to="contact"
         smooth
