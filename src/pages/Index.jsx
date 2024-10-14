@@ -20,7 +20,96 @@ import heroImage2 from '../assets/images/done/TeamDev/service1.png';
 import heroImage4 from '../assets/images/done/TeamDev/service2.png';
 
 // Styled Components
-import { CTAButton, Section, ContentWrapper, TextBlock, ImageWrapper } from "../styles/StyledComponents";
+const CTAButton = styled.button`
+  background-color: #1d4ed8;
+  color: #ffffff;
+  padding: 14px 28px;
+  margin-top: 20px;
+  border-radius: 25px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(29, 78, 216, 0.4);
+  cursor: pointer;
+
+  &:hover {
+    background-color: #1e40af;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(29, 78, 216, 0.5);
+  }
+
+  &:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 10px rgba(29, 78, 216, 0.3);
+  }
+`;
+
+const Section = styled.section`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0;
+  background: linear-gradient(to right, #e0f7fa, #e3f2fd);
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+`;
+
+const ContentWrapper = styled.div`
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+`;
+
+const TextBlock = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+
+  h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    color: #0f172a;
+  }
+
+  p {
+    font-size: 1.125rem;
+    color: #475569;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+`;
+
+const ImageWrapper = styled.div`
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    transition: opacity 2s ease-in-out;
+    opacity: ${({ isVisible }) => (isVisible ? 1 : 0)};
+  }
+`;
 
 // Define the loadClientData function
 const loadClientData = (lang) => {
@@ -75,8 +164,8 @@ export default function Index() {
         <meta name="keywords" content="تدريب أكادير، التدريب المهني أكادير، تعلم اللغات أكادير، تدريب موظفي المطار، تدريب موظف تسجيل الوصول، تدريب دي جي أكادير، تدريب رعاية التمريض، توظيف أكادير، التوظيف الدولي، توظيف أكادير، مساعدة الوثائق، خدمات دعم التوظيف، استئجار الشركة أكادير، تسجيل الشركات، تدريب تطوير الويب، تطوير التطبيقات أكادير، تنظيف الواجهات أكادير، تنظيف النوافذ أكادير، الطلاء الخارجي أكادير، خدمات الكسوة أكادير، تنظيف الألواح الشمسية، صيانة الألواح الشمسية أكادير، خدمات خارجية أكادير، حلول تطوير مخصصة، دورات اللغات أكادير، تدريب التمريض أكادير، تدريب خدمة العملاء، تدريب إجراءات الأمن، تدريب إدارة الفعاليات، النمو المهني أكادير، دعم الوظائف الدولية، تدريب وظائف مخصص، فرص العمل في أكادير، تدريب الترويج عبر الإنترنت، إنشاء الأعمال أكادير، حلول تدريب شاملة، تطوير المهارات أكادير، أفضل تدريب في أكادير، دورات مهنية متقدمة، دعم مهني خبير" />
       </Helmet>
 
-      <Navbar/>
-      <Section id="home" className="bg-gradient-to-br from-blue-200 via-purple-200 to-blue-300 ">
+      <Navbar />
+      <Section id="home" className="bg-gradient-to-br from-blue-200 via-purple-200 to-blue-300">
         <ContentWrapper>
           <TextBlock data-aos="fade-right" className="pt-24" >
             <h1 className="sm:ml-20 sm:mb-20">
