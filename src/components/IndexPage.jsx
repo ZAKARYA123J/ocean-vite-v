@@ -124,7 +124,7 @@ const loadClientData = (lang) => {
   }
 };
 
-export default function Index() {
+ const Index=React.memo(  function Index() {
   const { i18n } = useTranslation();
   const [clientData, setClientData] = useState([]);
   const [currentImage, setCurrentImage] = useState(0);
@@ -164,7 +164,7 @@ export default function Index() {
         <meta name="keywords" content="تدريب أكادير، التدريب المهني أكادير، تعلم اللغات أكادير، تدريب موظفي المطار، تدريب موظف تسجيل الوصول، تدريب دي جي أكادير، تدريب رعاية التمريض، توظيف أكادير، التوظيف الدولي، توظيف أكادير، مساعدة الوثائق، خدمات دعم التوظيف، استئجار الشركة أكادير، تسجيل الشركات، تدريب تطوير الويب، تطوير التطبيقات أكادير، تنظيف الواجهات أكادير، تنظيف النوافذ أكادير، الطلاء الخارجي أكادير، خدمات الكسوة أكادير، تنظيف الألواح الشمسية، صيانة الألواح الشمسية أكادير، خدمات خارجية أكادير، حلول تطوير مخصصة، دورات اللغات أكادير، تدريب التمريض أكادير، تدريب خدمة العملاء، تدريب إجراءات الأمن، تدريب إدارة الفعاليات، النمو المهني أكادير، دعم الوظائف الدولية، تدريب وظائف مخصص، فرص العمل في أكادير، تدريب الترويج عبر الإنترنت، إنشاء الأعمال أكادير، حلول تدريب شاملة، تطوير المهارات أكادير، أفضل تدريب في أكادير، دورات مهنية متقدمة، دعم مهني خبير" />
       </Helmet>
 
-      <Navbar />
+      <Navbar/>
       <Section id="home" className="bg-gradient-to-br from-blue-200 via-purple-200 to-blue-300">
         <ContentWrapper>
           <TextBlock data-aos="fade-right" className="pt-24" >
@@ -188,7 +188,6 @@ export default function Index() {
       >
         {i18n.t(item.button)}
       </ScrollLink>
-
       <ScrollLink
         to="services"
         smooth
@@ -218,4 +217,5 @@ export default function Index() {
       <Footer />
     </>
   );
-}
+})
+export default Index
