@@ -3,7 +3,7 @@ import "./assets/css/tailwind.css";
 import "./assets/css/materialdesignicons.min.css";
 import "leaflet/dist/leaflet.css";
 import { Route, Routes, useLocation } from "react-router-dom";
-import Index from "./Pages";
+import Index from "./Pages/Index";
 import Formation from "./Pages/formation";
 import Service from "./Pages/service";
 import Jobs from "./components/recruitment/Jobs";
