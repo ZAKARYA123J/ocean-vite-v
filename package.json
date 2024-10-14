@@ -1,5 +1,6 @@
 {
-  "name": "vite-project",
+  "name": "Ocean connecting",
+  "description": "Global Job Placement & Document Assistance",
   "private": true,
   "version": "0.0.0",
   "type": "module",
