@@ -50,7 +50,14 @@ const ContentWrapper = styled.div`
     text-align: center;
   }
 `;
-
+const Loader = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 2rem;
+  color: #0f172a; // Change this color as per your design
+`;
 const TextBlock = styled.div`
   display: flex;
   flex-direction: column;
@@ -132,7 +139,7 @@ const loadClientData = (lang) => {
   }, [currentImage, images.length]);
   
   return (
-    <Suspense>
+    <Suspense fallback={<Loader>Loading Ocean connecting...</Loader>}>
       <Helmet>
         <title>Home | Ocean Connecting</title>
         <meta name="description" content="We specialize in global job placement and document assistance, offering tailored support in multiple languages." />
