@@ -96,15 +96,15 @@ const ImageWrapper = styled.div`
 `;
 
 // Define the loadClientData function
-const loadClientData = (lang) => {
+const loadClientData =async (lang) => {
   switch (lang) {
     case 'fr':
-      return import('./locales/fr/translation').then(module => module.Titlefr);
+      return await import('./locales/fr/translation').then(module => module.Titlefr);
     case 'ar':
-      return import('./locales/ar/translation').then(module => module.TitleAR);
+      return await import('./locales/ar/translation').then(module => module.TitleAR);
     case 'en':
     default:
-      return import('./locales/en/translation').then(module => module.TitleEN);
+      return await import('./locales/en/translation').then(module => module.TitleEN);
   }
 };
 

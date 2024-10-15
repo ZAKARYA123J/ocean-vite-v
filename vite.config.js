@@ -3,28 +3,30 @@ import react from '@vitejs/plugin-react';
 import Inspect from 'vite-plugin-inspect';
 import { visualizer } from 'rollup-plugin-visualizer';
 import compression from 'vite-plugin-compression';
-// import { createImaginPlugin } from "vite-plugin-imagemin";
+import imagemin from 'vite-plugin-imagemin';
 export default defineConfig({
   base: '/', // base path
   plugins: [react(),
-    // createImaginPlugin({
-    //   // Options
-    //   verbose: true, // Log messages when images are optimized
-    //   gifsicle: {
-    //     interlaced: false, // Disable interlacing for gifs
-    //   },
-    //   optipng: {
-    //     optimizationLevel: 5, // PNG optimization level (0-7)
-    //   },
-    //   mozjpeg: {
-    //     quality: 75, // JPEG quality (0-100)
-    //   },
-    //   webp: {
-    //     quality: 75, // WebP quality (0-100)
-    //   },
-    //   // You can add more options for other image formats like svg, etc.
-    // }),
+  
     Inspect(),
+    imagemin({
+      plugins: [
+        { 
+          // Example plugin configuration
+          name: 'imagemin-mozjpeg', 
+          options: {
+            quality: 75
+          }
+        },
+        { 
+          // Other plugins can be added here
+          name: 'imagemin-pngquant', 
+          options: {
+            quality: [0.6, 0.8]
+          }
+        },
+      ],
+    }),
     compression({
       // Options
       verbose: true, // Log messages when files are compressed

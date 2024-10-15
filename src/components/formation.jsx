@@ -5,15 +5,15 @@ import { useTranslation } from 'react-i18next';
 import styled from "styled-components";
 
 // Function to load client data based on the language
-const loadClientData = (lang) => {
+const loadClientData =async (lang) => {
   switch (lang) {
     case 'fr':
-      return import('./locales/fr/translation').then(module => module.blogDataFR);
+      return await import('./locales/fr/translation').then(module => module.blogDataFR);
     case 'ar':
-      return import('./locales/ar/translation').then(module => module.blogDataAR);
+      return await import('./locales/ar/translation').then(module => module.blogDataAR);
     case 'en':
     default:
-      return import('./locales/en/translation').then(module => module.blogDataEN);
+      return await import('./locales/en/translation').then(module => module.blogDataEN);
   }
 };
 

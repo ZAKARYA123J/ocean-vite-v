@@ -26,15 +26,15 @@ const CTA = styled.button`
   }
 `;
 
-const loadClientData = (lang) => {
+const loadClientData = async(lang) => {
   switch (lang) {
     case 'fr':
-      return import('./locales/fr/translation').then(module => module.serviceDataFR);
+      return await import('./locales/fr/translation').then(module => module.serviceDataFR);
     case 'ar':
-      return import('./locales/ar/translation').then(module => module.serviceDataAR);
+      return await import('./locales/ar/translation').then(module => module.serviceDataAR);
     case 'en':
     default:
-      return import('./locales/en/translation').then(module => module.serviceDataEN);
+      return await import('./locales/en/translation').then(module => module.serviceDataEN);
   }
 };
 
