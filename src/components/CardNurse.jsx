@@ -18,7 +18,7 @@ const loadClientData = async (lang) => {
     return [];
   }
 };
-const CardNurse = () => {
+const CardNurse =React.memo( () => {
   const [isModalOpen, setModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState({ title: '', description: '' });
   const [cardnurse, setCardnurse] = useState([]);
@@ -238,6 +238,6 @@ const CardNurse = () => {
       )}
     </section>
   );
-};
+});
 
 export default CardNurse;

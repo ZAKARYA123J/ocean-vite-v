@@ -18,7 +18,7 @@ const loadClientData = (lang) => {
     }
 };
 
-export default function Client() {
+const Client=React.memo( function Client() {
     const { i18n } = useTranslation(); // Get the i18n instance
 
     const [clientData, setClientData] = React.useState([]);
@@ -90,4 +90,5 @@ export default function Client() {
             </div>
         </section>
     );
-}
+})
+export default Client

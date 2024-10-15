@@ -38,7 +38,7 @@ const loadClientData = (lang) => {
   }
 };
 
-export default function Daitalservice() {
+const Daitalservice=React.memo( function Daitalservice() {
   const { id } = useParams();
   const [activeIndex, setActiveIndex] = useState(Number(id));
   const [serviceData, setServiceData] = useState([]);
@@ -138,4 +138,5 @@ export default function Daitalservice() {
       </div>
     </section>
   );
-}
+})
+export default Daitalservice

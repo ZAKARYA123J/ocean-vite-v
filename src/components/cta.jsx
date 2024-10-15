@@ -6,7 +6,7 @@ import ctaImage from "../assets/images/home.png"
 import ModalVideo from 'react-modal-video';
 import '../../node_modules/react-modal-video/scss/modal-video.scss';
 
-export default function Cta(){
+const Cta=React.memo( function Cta(){
     let [isOpen, setOpen] = useState(false);
     return(
         <section className="relative md:py-24 py-16 md:pt-0 pt-0">
@@ -59,4 +59,5 @@ export default function Cta(){
         <div className="absolute bottom-0 start-0 end-0 sm:h-2/3 h-4/5 bg-gradient-to-b from-sky-400 to-sky-500"></div>
     </section>
     )
-}
+})
+export default Cta

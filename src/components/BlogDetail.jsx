@@ -78,64 +78,12 @@ const BlogContent = styled(motion.div)`
   }
 `;
 
-const ActionSection = styled(motion.div)`
-  background: #ffffff;
-  border-radius: 16px;
-  padding: 30px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05); /* Light shadow */
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  width: 280px;
-  position: sticky;
-  top: 100px;
-  right: 20px;
-
-  @media (max-width: 1024px) {
-    position: relative;
-    width: 100%;
-    margin-top: 20px;
-  }
-`;
-
-const ActionTitle = styled.h3`
-  font-size: 1.5rem;
-  color: #2d3748; /* Dark gray-blue */
-`;
-
-const CTAButton = styled(motion.button)`
-  padding: 15px 40px;
-  background-color: #3182ce; /* Blue button */
-  color: #ffffff;
-  font-weight: 600;
-  border-radius: 12px;
-  cursor: pointer;
-  border: none;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-
-  &:hover {
-    background-color: #2b6cb0; /* Darker blue */
-    transform: translateY(-2px);
-  }
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  svg {
-    margin-left: 8px;
-  }
-
-  /* Media query for small screens */
-  @media (max-width: 768px) {
-    margin-bottom: 50px; /* Add margin-bottom for small screens */
-  }
-`;
 
 
-const BlogDetail = () => {
+
+
+
+const BlogDetail = React.memo(() => {
   const { i18n, t } = useTranslation();
   const [blogData, setBlogData] = useState([]);
   const { id } = useParams();
@@ -210,23 +158,8 @@ const BlogDetail = () => {
 {t(blogPost.cta?.message)} 
         </BlogContent>
       </BlogContainer>
-
-      {/* Sticky Call to Action on the Right */}
-      {/* <ActionSection
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.4 }}
-      >
-        <ActionTitle>{t('Need help with this topic?')}</ActionTitle>
-        <CTAButton
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          {t('Get Assistance')} <FaBolt />
-        </CTAButton>
-      </ActionSection> */}
     </PageContainer>
   );
-};
+});
 
 export default BlogDetail;

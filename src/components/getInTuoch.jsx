@@ -91,7 +91,7 @@ const loadClientData = async (lang) => {
   }
 };
 
-export default function GetInTouch() {
+const GetInTouch= React.memo( function GetInTouch() {
   const [contact, setContactData] = useState([]);
   const { i18n, t } = useTranslation();
 
@@ -224,4 +224,5 @@ export default function GetInTouch() {
       ))}
     </Section>
   );
-}
+})
+export default GetInTouch

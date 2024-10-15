@@ -45,7 +45,7 @@ const faqs = [
   },
 ];
 
-const ContractWorksPage = () => {
+const ContractWorksPage =React.memo( () => {
   const [contracts] = useState(contractData);
   const [searchTerm, setSearchTerm] = useState('');
   const [filterCountry, setFilterCountry] = useState('');
@@ -319,6 +319,6 @@ const ContractWorksPage = () => {
       <Footer />
     </div>
   );
-};
+});
 
 export default ContractWorksPage;

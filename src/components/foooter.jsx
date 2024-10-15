@@ -24,7 +24,7 @@ const loadClientData = (lang) => {
   }
 };
 
-const Footer = () => {
+const Footer = React.memo(() => {
   const [footerData, setFooterData] = useState({});
   const { i18n } = useTranslation();
 
@@ -131,7 +131,7 @@ const Footer = () => {
     </footer>
   );
 }
-
+)
 // FooterLinkSection component
 function FooterLinkSection({ title, links }) {
   return (

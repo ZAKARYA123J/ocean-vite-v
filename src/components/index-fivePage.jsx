@@ -3,7 +3,7 @@ import Navbar from "./navbar";
 import BlogDetail from "./BlogDetail";
 import Footer from "./foooter";
 import { Helmet } from "react-helmet-async";
-export default function IndexFive() {
+ function IndexFive() {
 
     return (
         <>
@@ -28,3 +28,4 @@ export default function IndexFive() {
         </>
     )
 }
+export default IndexFive

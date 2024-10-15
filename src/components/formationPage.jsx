@@ -7,7 +7,7 @@ import Switcher from "./switcher";
 import { Helmet } from "react-helmet-async";
 
 
-export default function IndexSix(){
+const IndexSix = React.memo(function IndexSix(){
     return(
         <>
            <Helmet>
@@ -24,4 +24,5 @@ export default function IndexSix(){
             <Switcher/>
         </>
     )
-}
+})
+export default IndexSix

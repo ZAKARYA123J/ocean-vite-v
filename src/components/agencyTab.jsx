@@ -174,7 +174,7 @@ const loadClientData = (lang) => {
   }
 };
 
-export default function AgencyTab() {
+const AgencyTab=React.memo( function AgencyTab() {
   const [activeIndex, setActiveIndex] = useState(1);
   const { type } = useParams();
   const [recruitment, setRecruitment] = useState([]);
@@ -228,4 +228,5 @@ export default function AgencyTab() {
       </Container>
     </Section>
   );
-}
+})
+export default AgencyTab

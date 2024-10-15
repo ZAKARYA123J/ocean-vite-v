@@ -65,7 +65,7 @@ const loadClientData = (lang) => {
   }
 };
 
-export default function Blogs() {
+const Blogs=React.memo( function Blogs() {
   const { i18n, t } = useTranslation();
   const [blogData, setBlogData] = useState([]);
 
@@ -160,4 +160,5 @@ export default function Blogs() {
       </div>
     </section>
   );
-}
+})
+export default Blogs

@@ -18,7 +18,7 @@ import { FaUser, FaEnvelope, FaPhone, FaStethoscope } from "react-icons/fa"; // 
       return [];
     }
   };
-const ContactForm = () => {
+const ContactForm =React.memo( () => {
   // State to handle form inputs
   const [formData, setFormData] = useState({
     firstName: "",
@@ -197,6 +197,6 @@ const ContactForm = () => {
         ))}
     </section>
   );
-};
+});
 
 export default ContactForm;
