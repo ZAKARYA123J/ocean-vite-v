@@ -1,6 +1,6 @@
 // src/components/ContractWorksPage.js
 
-import React, { useState } from 'react';
+import React from 'react';
 import Navbar from './navbar';
 import Footer from './foooter';
 import Modal from './Modall';

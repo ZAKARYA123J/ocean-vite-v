@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+
 import projectAlphaLogo from "../assets/images/done/ocean3.png";
 import projectBetaLogo from "../assets/images/done/ocean3.png";
 import projectGammaLogo from "../assets/images/done/ocean3.png";

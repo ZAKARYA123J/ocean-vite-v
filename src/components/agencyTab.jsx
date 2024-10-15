@@ -1,6 +1,4 @@
-import React, { useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
-import { useTranslation } from "react-i18next";
+import React from "react";
 import styled, { keyframes } from "styled-components";
 import { FiArrowRight, FiUserCheck, FiBriefcase, FiLayers } from "react-icons/fi";
 

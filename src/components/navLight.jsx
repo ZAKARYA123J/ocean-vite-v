@@ -1,5 +1,4 @@
-import React,{useState,useEffect} from "react";
-import { Link } from "react-router-dom";
+
 import img from './ocean3.png'
 import { Link as Link1 } from "react-scroll";
 

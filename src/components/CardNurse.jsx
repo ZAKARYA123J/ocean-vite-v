@@ -1,6 +1,6 @@
-import React, { useState ,useEffect} from 'react';
+import React from 'react';
 import { FaCheckCircle, FaUserShield, FaHandHoldingHeart, FaSmileBeam } from 'react-icons/fa';
-import { useTranslation } from 'react-i18next';
+
 
 const loadClientData = async (lang) => {
   try {

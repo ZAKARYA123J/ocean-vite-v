@@ -2,14 +2,12 @@ import { CgWebsite } from "react-icons/cg";
 import { IoHomeOutline } from "react-icons/io5";
 import { MdOutlineCleaningServices } from "react-icons/md";
 import { SlNote } from "react-icons/sl";
-import { Link, useParams } from "react-router-dom";
 import { Link as Link1 } from "react-scroll";
 import client1 from '../../../assets/images/team/01.jpg'
 import client2 from '../../../assets/images/team/02.jpg'
 import client3 from '../../../assets/images/team/03.jpg'
 import client4 from '../../../assets/images/team/04.jpg'
 import client5 from '../../../assets/images/team/05.jpg'
-// import formation4 from '../assets/images/formation/formation4.jpg'
 import formation5 from '../../../assets/images/formation/formation05.jpg'
 import formation6 from '../../../assets/images/formation/formation6.jpg'
 import formation17 from '../../../assets/images/formation/formation17.jpg'

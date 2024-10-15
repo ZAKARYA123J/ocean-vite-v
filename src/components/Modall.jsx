@@ -3,7 +3,7 @@
 import React from 'react';
 import { FaTimes, FaMapMarkerAlt, FaCalendarAlt, FaMoneyBillWave, FaInfoCircle } from 'react-icons/fa';
 
-const Modal = ({ contract, onClose }) => {
+const Modal = React.memo(({ contract, onClose }) => {
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
       <div className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-2xl max-w-lg w-full relative transform transition-all duration-500 ease-in-out scale-105 opacity-100">
@@ -57,6 +57,6 @@ const Modal = ({ contract, onClose }) => {
       </div>
     </div>
   );
-};
+});
 
 export default Modal;

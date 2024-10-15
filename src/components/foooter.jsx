@@ -7,7 +7,6 @@ import { FaFacebookF } from "react-icons/fa6";
 import { ImLinkedin2 } from "react-icons/im";
 import { IoLogoYoutube } from "react-icons/io";
 import logo from "../components/ocean3.png"; // Ensure correct path for logo
-import { Link } from "react-router-dom";
 import { footerDataEn } from './locales/en/translation';  // Import the JSON data
 import { footerDataFr } from './locales/fr/translation';  // Import the JSON data
 import { footerDataAr } from './locales/ar/translation';  // Import the JSON data

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from "react-router-dom";
 import { FiCalendar, FiClock } from '../assets/icons/vander'; // Ensure these icons are imported correctly
 import { useTranslation } from 'react-i18next';
 import styled from "styled-components";

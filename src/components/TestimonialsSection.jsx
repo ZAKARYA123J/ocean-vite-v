@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { FaQuoteLeft } from 'react-icons/fa';
 import avatar1 from '../assets/images/done/TeamNurse/avatar.jpg';
 import avatar2 from '../assets/images/done/TeamNurse/avatar.jpg';

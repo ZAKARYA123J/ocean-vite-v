@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { FaBolt } from 'react-icons/fa';
 import styled from 'styled-components';

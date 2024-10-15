@@ -3,7 +3,7 @@ import './i18n';
 import LanguageSwitcher from "./LanguageSwitcher";
 import TinySlider from "tiny-slider-react";
 import 'tiny-slider/dist/tiny-slider.css';
-import { useTranslation } from 'react-i18next'; // Import useTranslation hook
+
 
 // Dynamic import function based on the selected language
 const loadClientData = (lang) => {

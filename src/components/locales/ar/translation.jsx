@@ -2,7 +2,6 @@ import { CgWebsite } from "react-icons/cg";
 import { IoHomeOutline } from "react-icons/io5";
 import { MdOutlineCleaningServices } from "react-icons/md";
 import { SlNote } from "react-icons/sl";
-import { Link, useParams } from "react-router-dom";
 import { Link as Link1 } from "react-scroll";
 import client1 from '../../../assets/images/team/01.jpg'
 import client2 from '../../../assets/images/team/02.jpg'

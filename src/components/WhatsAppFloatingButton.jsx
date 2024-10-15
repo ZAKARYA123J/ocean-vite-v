@@ -1,5 +1,5 @@
 // WhatsAppFloatingButton.js
-import React from 'react';
+
 import watssap from '../assets/images/WhatsApp.svg'
 
 export const WhatsAppFloatingButton = () => {

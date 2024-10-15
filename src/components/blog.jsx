@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from "react"; 
-import { Link } from "react-router-dom";
-import { useTranslation } from "react-i18next";
+import React from "react"; 
 import styled, { keyframes } from "styled-components";
 import { FiCalendar, FiClock, FiShare2, FiArrowRight } from 'react-icons/fi'; // Import the arrow icon
 

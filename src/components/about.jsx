@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import aboutImage from '../assets/images/about.jpg'; // Replace with your image path
-import { useTranslation } from "react-i18next";
 import CountUp from 'react-countup';
 import { motion } from 'framer-motion';
 import { FaGlobe, FaFileAlt } from 'react-icons/fa'; // Importing icons

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef,useState } from 'react';
+import React from 'react';
 import Navbar from './navbar';
 import Footer from './foooter';
 import nurseVideo from '../assets/images/done/TeamNurse/nurse2.mp4';

@@ -5,10 +5,25 @@ import { visualizer } from 'rollup-plugin-visualizer';
 import compression from 'vite-plugin-compression';  
 import imagemin from 'vite-plugin-imagemin';  
 
+import AutoImport from 'unplugin-auto-import/vite';
 export default defineConfig({  
   base: '/', // base path  
   plugins: [  
-    react(),  
+    react(), 
+    AutoImport({
+      // Targets the libraries you want to auto-import from
+      imports: [
+        'react', // Automatically imports React functions like useState, useEffect
+        'react-router-dom',
+         'react-i18next',
+      ],
+      // Generate an auto-imports.d.ts file with types
+      dts: './auto-imports.d.ts',
+      eslintrc: {
+        enabled: true, // Automatically generates an ESLint config
+        filepath: './.eslintrc-auto-import.json', // Where the config is saved
+      },
+    }), 
     Inspect(),  
     imagemin({  
       verbose: true, // Afficher un log dans la console pour le débogage  
@@ -44,6 +59,7 @@ export default defineConfig({
         },  
       ],  
     }),  
+   
     compression({  
       verbose: true, // Log messages when files are compressed  
       disable: false, // Set to true to disable compression  

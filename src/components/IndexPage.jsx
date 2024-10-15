@@ -1,4 +1,4 @@
-import React, { useEffect, useState , lazy, Suspense,useMemo } from "react";
+import React, {  Suspense } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import Footer from './foooter';
 const About = lazy(() => import("./about"));
@@ -14,11 +14,6 @@ import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
 import LazyLoad from 'react-lazyload';
-
-// Import images directly
-// import heroImage1 from '../assets/images/done/TeamDev/service.png';
-// import heroImage2 from '../assets/images/done/TeamDev/service1.png';
-// import heroImage4 from '../assets/images/done/TeamDev/service2.png';
 const heroImage1 = 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Site%20ocean%2Fservice.png?alt=media&token=b54504fc-6722-431f-8787-d75218233c1b';
 const heroImage2 = 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Site%20ocean%2Fservice1.png?alt=media&token=0d65089b-9802-41ec-800d-ab41f867dab0';
 const heroImage4 = 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Site%20ocean%2Fservice2.png?alt=media&token=0a170203-2f38-4d56-8309-030c8b87e0d3';
