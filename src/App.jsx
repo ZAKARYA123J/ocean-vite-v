@@ -21,7 +21,6 @@ import { AnimatePresence, motion } from "framer-motion";
 import TeamGlass from "./components/TeamGlass";
 const App=React.memo( function App() {
   const location = useLocation();
-
   const pageVariants = {
     initial: {
       opacity: 0,
