@@ -26,7 +26,7 @@ const Gallery = () => {
         fetchData();
     }, [i18n.language]);
     return (
-        <>
+        <div className="flex flex-col min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100">
             <Navbar />
             <section className="py-20 bg-gray-50 dark:bg-gray-900" id="gallery">
                 <div className="container mx-auto px-4 lg:px-8 max-w-6xl">
@@ -76,7 +76,7 @@ const Gallery = () => {
             <WhatsAppFloatingButton />
             <Footer />
             <Switcher />
-        </>
+        </div>
     );
 };
 export default Gallery;

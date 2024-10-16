@@ -5,7 +5,7 @@ import "leaflet/dist/leaflet.css";
 import React from "react";
 import Index from "./components/IndexPage.jsx";
 import Formation from "./components/formationPage.jsx";
-import Service from "./components/servicePage.jsx";
+
 import Jobs from "./components/recruitment/Jobs";
 import IndexFive from "./components/index-fivePage.jsx";
 import Gallery from "./components/Gallery/gallery";
@@ -102,23 +102,6 @@ const App=React.memo( function App() {
                 }}
               >
                 <IndexFive />
-              </motion.div>
-            }
-          />
-          <Route
-            path="/service/:id"
-            element={
-              <motion.div
-                style={pageStyle}
-                initial={{ opacity: 0, x: -300 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: 300 }}
-                transition={{
-                  duration: 1,
-                  ease: "anticipate",
-                }}
-              >
-                <Service />
               </motion.div>
             }
           />

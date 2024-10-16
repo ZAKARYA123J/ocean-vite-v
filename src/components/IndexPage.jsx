@@ -125,9 +125,10 @@ const loadClientData =async (lang) => {
       return () => clearTimeout(timeout);
     }
   }, [currentImage, images.length, setCurrentImage]);
-  console.log(currentImage)
+
   return (
     <Suspense fallback={<Loader>Loading Ocean connecting...</Loader>}>
+       
       <Helmet>
      
         <title>Home | Ocean Connecting</title>
@@ -135,9 +136,9 @@ const loadClientData =async (lang) => {
         <meta name="keywords" content="Agadir Training, Professional Training Agadir, Language Learning Agadir, Airport Agent Training, Check-in Agent Training, DJ Training Agadir, Nursing Care Training, Agadir Job Placement, International Recruitment, Recruitment Agadir, Document Assistance, Job Support Services, Company Domiciliation Agadir, Corporate Domiciliation, Web Development Training, App Development Agadir, Facade Cleaning Agadir, Window Cleaning Agadir, Exterior Coating Agadir, Cladding Services Agadir, Solar Panel Cleaning, Agadir Solar Maintenance, Exterior Services Agadir, Custom Development Solutions, Language Courses Agadir, Nurse Training Agadir, Customer Service Training, Security Procedures Training, Event Management Training, Professional Growth Agadir, Global Career Support, Customized Job Training, Agadir Career Opportunities, Online Promotion Training, Business Establishment Agadir, Comprehensive Training Solutions, Skill Development ,Formation Agadir, Formation Professionnelle Agadir, Apprentissage des Langues Agadir, Formation Agent Aéroport, Formation Agent d’Enregistrement, Formation DJ Agadir, Formation Soins Infirmiers, Placement Professionnel Agadir, Recrutement International, Recrutement Agadir, Assistance aux Documents, Services de Soutien à l’Emploi, Domiciliation Entreprise Agadir, Domiciliation d’Entreprise, Formation Développement Web, Développement d’Applications Agadir, Nettoyage de Façade Agadir, Nettoyage de Fenêtres Agadir, Revêtement Extérieur Agadir, Services de Bardage Agadir, Nettoyage de Panneaux Solaires, Entretien des Panneaux Solaires Agadir, Services Extérieurs Agadir, Solutions de Développement Personnalisées, Cours de Langues Agadir, Formation Infirmière Agadir, Formation Service Client, Formation aux Procédures de Sécurité, Formation en Gestion d'Événements, Croissance Professionnelle Agadir, Soutien aux Carrières Internationales, Formation Professionnelle Personnalisée, Opportunités de Carrière Agadir, Formation à la Promotion en Ligne, Création d'Entreprise Agadir, Solutions de Formation Complètes, Développement de Compétences Agadir, Meilleure Formation à Agadir, Cours Professionnels Avancés, Soutien Professionnel Expert," />
         <meta name="keywords" content="تدريب أكادير، التدريب المهني أكادير، تعلم اللغات أكادير، تدريب موظفي المطار، تدريب موظف تسجيل الوصول، تدريب دي جي أكادير، تدريب رعاية التمريض، توظيف أكادير، التوظيف الدولي، توظيف أكادير، مساعدة الوثائق، خدمات دعم التوظيف، استئجار الشركة أكادير، تسجيل الشركات، تدريب تطوير الويب، تطوير التطبيقات أكادير، تنظيف الواجهات أكادير، تنظيف النوافذ أكادير، الطلاء الخارجي أكادير، خدمات الكسوة أكادير، تنظيف الألواح الشمسية، صيانة الألواح الشمسية أكادير، خدمات خارجية أكادير، حلول تطوير مخصصة، دورات اللغات أكادير، تدريب التمريض أكادير، تدريب خدمة العملاء، تدريب إجراءات الأمن، تدريب إدارة الفعاليات، النمو المهني أكادير، دعم الوظائف الدولية، تدريب وظائف مخصص، فرص العمل في أكادير، تدريب الترويج عبر الإنترنت، إنشاء الأعمال أكادير، حلول تدريب شاملة، تطوير المهارات أكادير، أفضل تدريب في أكادير، دورات مهنية متقدمة، دعم مهني خبير" />
       </Helmet>
-
-      <Navbar/>
-      <Section id="home" className="bg-gradient-to-br from-blue-200 via-purple-200 to-blue-300">
+       <Navbar/>
+      <Section id="home" className=" bg-gradient-to-br from-blue-200 via-purple-200 to-blue-300">
+      
         <ContentWrapper>
           <TextBlock data-aos="fade-right" className="pt-24" >
             <h1 className="sm:ml-20 sm:mb-20">
