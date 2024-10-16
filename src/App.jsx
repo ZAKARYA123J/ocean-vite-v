@@ -17,6 +17,7 @@ import LanguagesPage from "./components/LanguagesPage";
 import { HelmetProvider } from "react-helmet-async";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { AnimatePresence, motion } from "framer-motion";
+import { ImageProvider } from "./components/ImageContext.jsx";
 import TeamGlass from "./components/TeamGlass";
 const App=React.memo( function App() {
   const location = useLocation();
@@ -49,6 +50,7 @@ const App=React.memo( function App() {
   };
 
   return (
+    <ImageProvider>
     <HelmetProvider>
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
@@ -234,6 +236,7 @@ const App=React.memo( function App() {
       </AnimatePresence>
       <SpeedInsights />
     </HelmetProvider>
+    </ImageProvider>
   );
 })
 

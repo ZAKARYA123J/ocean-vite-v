@@ -14,10 +14,7 @@ import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
 import LazyLoad from 'react-lazyload';
-const heroImage1 = 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Site%20ocean%2Fservice.png?alt=media&token=b54504fc-6722-431f-8787-d75218233c1b';
-const heroImage2 = 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Site%20ocean%2Fservice1.png?alt=media&token=0d65089b-9802-41ec-800d-ab41f867dab0';
-const heroImage4 = 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Site%20ocean%2Fservice2.png?alt=media&token=0a170203-2f38-4d56-8309-030c8b87e0d3';
-
+import { useImageContext } from './ImageContext';
 // Styled Components
 
 const Section = styled.section`
@@ -78,7 +75,6 @@ const ImageWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
   img {
     max-width: 100%;
     height: auto;
@@ -89,7 +85,6 @@ const ImageWrapper = styled.div`
     opacity: ${({ isVisible }) => (isVisible ? 1 : 0)};
   }
 `;
-
 // Define the loadClientData function
 const loadClientData =async (lang) => {
   switch (lang) {
@@ -106,11 +101,8 @@ const loadClientData =async (lang) => {
  const Index=React.memo(  function Index() {
   const { i18n } = useTranslation();
   const [clientData, setClientData] = useState([]);
-  const [currentImage, setCurrentImage] = useState(0);
-
   // List of images for automatic switching
-  const images = useMemo(() => [heroImage1, heroImage2, heroImage4], []);
-
+  const { images, currentImage, setCurrentImage } = useImageContext();
   useEffect(() => {
     loadClientData(i18n.language).then(data => setClientData(data));
     
@@ -126,17 +118,18 @@ const loadClientData =async (lang) => {
 
   // Automatically switch images every 3 seconds
   useEffect(() => {
-    const timeout = setTimeout(() => {
-      setCurrentImage((prevImage) => (prevImage + 1) % images.length);
-    }, 3000);
-    
-    return () => clearTimeout(timeout);
-  }, [currentImage, images.length]);
-  
+    if (images.length > 0) {
+      const timeout = setTimeout(() => {
+        setCurrentImage((prevImage) => (prevImage + 1) % images.length);
+      }, 3000);
+      return () => clearTimeout(timeout);
+    }
+  }, [currentImage, images.length, setCurrentImage]);
+  console.log(currentImage)
   return (
     <Suspense fallback={<Loader>Loading Ocean connecting...</Loader>}>
       <Helmet>
-      <link rel="preload" as="image" href={heroImage1} />
+     
         <title>Home | Ocean Connecting</title>
         <meta name="description" content="We specialize in global job placement and document assistance, offering tailored support in multiple languages." />
         <meta name="keywords" content="Agadir Training, Professional Training Agadir, Language Learning Agadir, Airport Agent Training, Check-in Agent Training, DJ Training Agadir, Nursing Care Training, Agadir Job Placement, International Recruitment, Recruitment Agadir, Document Assistance, Job Support Services, Company Domiciliation Agadir, Corporate Domiciliation, Web Development Training, App Development Agadir, Facade Cleaning Agadir, Window Cleaning Agadir, Exterior Coating Agadir, Cladding Services Agadir, Solar Panel Cleaning, Agadir Solar Maintenance, Exterior Services Agadir, Custom Development Solutions, Language Courses Agadir, Nurse Training Agadir, Customer Service Training, Security Procedures Training, Event Management Training, Professional Growth Agadir, Global Career Support, Customized Job Training, Agadir Career Opportunities, Online Promotion Training, Business Establishment Agadir, Comprehensive Training Solutions, Skill Development ,Formation Agadir, Formation Professionnelle Agadir, Apprentissage des Langues Agadir, Formation Agent Aéroport, Formation Agent d’Enregistrement, Formation DJ Agadir, Formation Soins Infirmiers, Placement Professionnel Agadir, Recrutement International, Recrutement Agadir, Assistance aux Documents, Services de Soutien à l’Emploi, Domiciliation Entreprise Agadir, Domiciliation d’Entreprise, Formation Développement Web, Développement d’Applications Agadir, Nettoyage de Façade Agadir, Nettoyage de Fenêtres Agadir, Revêtement Extérieur Agadir, Services de Bardage Agadir, Nettoyage de Panneaux Solaires, Entretien des Panneaux Solaires Agadir, Services Extérieurs Agadir, Solutions de Développement Personnalisées, Cours de Langues Agadir, Formation Infirmière Agadir, Formation Service Client, Formation aux Procédures de Sécurité, Formation en Gestion d'Événements, Croissance Professionnelle Agadir, Soutien aux Carrières Internationales, Formation Professionnelle Personnalisée, Opportunités de Carrière Agadir, Formation à la Promotion en Ligne, Création d'Entreprise Agadir, Solutions de Formation Complètes, Développement de Compétences Agadir, Meilleure Formation à Agadir, Cours Professionnels Avancés, Soutien Professionnel Expert," />
@@ -178,11 +171,10 @@ const loadClientData =async (lang) => {
 
           
           </TextBlock>
-          <ImageWrapper data-aos="fade-left" className="" isVisible>
-  <LazyLoad height={400} offset={100} once>
-    <img src={images[currentImage]} alt="Design Team" />
-  </LazyLoad>
-</ImageWrapper>
+        <LazyLoad>
+  <img src={images[currentImage]} alt="Design Team" />
+</LazyLoad>  
+
 
         </ContentWrapper>
       </Section>
