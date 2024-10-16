@@ -69,7 +69,7 @@ const Services = () => {
     <div className="bg-gray-50 dark:bg-gray-900 dark:text-white py-16" id="services">
       <div className="container mx-auto px-6 lg:px-8">
         {serviceData.map((skill)=>(
-        <h1 className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-10">
+        <h1 className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-10" key={skill.id}>
           {t(skill.Servicetitle)}
         </h1>))}
 
