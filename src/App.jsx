@@ -5,7 +5,6 @@ import "leaflet/dist/leaflet.css";
 import React from "react";
 import Index from "./components/IndexPage.jsx";
 import Formation from "./components/formationPage.jsx";
-
 import Jobs from "./components/recruitment/Jobs";
 import IndexFive from "./components/index-fivePage.jsx";
 import Gallery from "./components/Gallery/gallery";

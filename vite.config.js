@@ -4,12 +4,13 @@ import Inspect from 'vite-plugin-inspect';
 import { visualizer } from 'rollup-plugin-visualizer';  
 import compression from 'vite-plugin-compression';  
 import imagemin from 'vite-plugin-imagemin';  
-
+import MillionLint from "@million/lint";
 import AutoImport from 'unplugin-auto-import/vite';
 export default defineConfig({  
   base: '/', // base path  
   plugins: [  
     react(), 
+    MillionLint.vite(),
     AutoImport({
       // Targets the libraries you want to auto-import from
       imports: [
@@ -76,7 +77,7 @@ export default defineConfig({
   ],  
   resolve: {  
     alias: {  
-      '@': '/src', // alias pour le dossier src  
+      '@': '/src', // alias pour le dossier src 
     },  
   },  
   build: {  
