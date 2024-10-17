@@ -17,7 +17,7 @@ import LazyLoad from 'react-lazyload';
 const heroImage1 = 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Site%20ocean%2Fservice.png?alt=media&token=b54504fc-6722-431f-8787-d75218233c1b';
 const heroImage2 = 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Site%20ocean%2Fservice1.png?alt=media&token=0d65089b-9802-41ec-800d-ab41f867dab0';
 const heroImage4 = 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Site%20ocean%2Fservice2.png?alt=media&token=0a170203-2f38-4d56-8309-030c8b87e0d3';
-
+import axios from 'axios'
 // Styled Components
 
 const Section = styled.section`
@@ -107,14 +107,36 @@ const loadClientData =async (lang) => {
   const { i18n } = useTranslation();
   const [clientData, setClientData] = useState([]);
   const [currentImage, setCurrentImage] = useState(0);
+  const [metaData, setMetaData] = useState({
+    title: 'Ocean Connecting',
+    description: '',
+    keywords: '',
+  });
 
   // List of images for automatic switching
   const images = useMemo(() => [heroImage1, heroImage2, heroImage4], []);
 
   useEffect(() => {
+    const fetchMetaData = async () => {
+      try {
+        const response = await axios.get(`https://hono-on-vercel123-54cp.vercel.app/api/meta`, {
+          params: {
+            page: 'home',
+            lang: i18n.language,
+          },
+        });
+        setMetaData(response.data);
+      } catch (error) {
+        console.error('Error fetching metadata:', error);
+      }
+    };
+
+    fetchMetaData();
+  }, [i18n.language]);
+
+  useEffect(() => {
     loadClientData(i18n.language).then(data => setClientData(data));
-    
-    // Initialize AOS animations
+
     AOS.init({
       offset: 100,
       duration: 800,
@@ -124,22 +146,20 @@ const loadClientData =async (lang) => {
     AOS.refresh();
   }, [i18n.language]);
 
-  // Automatically switch images every 3 seconds
   useEffect(() => {
     const timeout = setTimeout(() => {
       setCurrentImage((prevImage) => (prevImage + 1) % images.length);
     }, 3000);
-    
+
     return () => clearTimeout(timeout);
   }, [currentImage, images.length]);
-  
+
   return (
     <Suspense fallback={<Loader>Loading Ocean connecting...</Loader>}>
       <Helmet>
-        <title>Home | Ocean Connecting</title>
-        <meta name="description" content="We specialize in global job placement and document assistance, offering tailored support in multiple languages." />
-        <meta name="keywords" content="Agadir Training, Professional Training Agadir, Language Learning Agadir, Airport Agent Training, Check-in Agent Training, DJ Training Agadir, Nursing Care Training, Agadir Job Placement, International Recruitment, Recruitment Agadir, Document Assistance, Job Support Services, Company Domiciliation Agadir, Corporate Domiciliation, Web Development Training, App Development Agadir, Facade Cleaning Agadir, Window Cleaning Agadir, Exterior Coating Agadir, Cladding Services Agadir, Solar Panel Cleaning, Agadir Solar Maintenance, Exterior Services Agadir, Custom Development Solutions, Language Courses Agadir, Nurse Training Agadir, Customer Service Training, Security Procedures Training, Event Management Training, Professional Growth Agadir, Global Career Support, Customized Job Training, Agadir Career Opportunities, Online Promotion Training, Business Establishment Agadir, Comprehensive Training Solutions, Skill Development ,Formation Agadir, Formation Professionnelle Agadir, Apprentissage des Langues Agadir, Formation Agent Aéroport, Formation Agent d’Enregistrement, Formation DJ Agadir, Formation Soins Infirmiers, Placement Professionnel Agadir, Recrutement International, Recrutement Agadir, Assistance aux Documents, Services de Soutien à l’Emploi, Domiciliation Entreprise Agadir, Domiciliation d’Entreprise, Formation Développement Web, Développement d’Applications Agadir, Nettoyage de Façade Agadir, Nettoyage de Fenêtres Agadir, Revêtement Extérieur Agadir, Services de Bardage Agadir, Nettoyage de Panneaux Solaires, Entretien des Panneaux Solaires Agadir, Services Extérieurs Agadir, Solutions de Développement Personnalisées, Cours de Langues Agadir, Formation Infirmière Agadir, Formation Service Client, Formation aux Procédures de Sécurité, Formation en Gestion d'Événements, Croissance Professionnelle Agadir, Soutien aux Carrières Internationales, Formation Professionnelle Personnalisée, Opportunités de Carrière Agadir, Formation à la Promotion en Ligne, Création d'Entreprise Agadir, Solutions de Formation Complètes, Développement de Compétences Agadir, Meilleure Formation à Agadir, Cours Professionnels Avancés, Soutien Professionnel Expert," />
-        <meta name="keywords" content="تدريب أكادير، التدريب المهني أكادير، تعلم اللغات أكادير، تدريب موظفي المطار، تدريب موظف تسجيل الوصول، تدريب دي جي أكادير، تدريب رعاية التمريض، توظيف أكادير، التوظيف الدولي، توظيف أكادير، مساعدة الوثائق، خدمات دعم التوظيف، استئجار الشركة أكادير، تسجيل الشركات، تدريب تطوير الويب، تطوير التطبيقات أكادير، تنظيف الواجهات أكادير، تنظيف النوافذ أكادير، الطلاء الخارجي أكادير، خدمات الكسوة أكادير، تنظيف الألواح الشمسية، صيانة الألواح الشمسية أكادير، خدمات خارجية أكادير، حلول تطوير مخصصة، دورات اللغات أكادير، تدريب التمريض أكادير، تدريب خدمة العملاء، تدريب إجراءات الأمن، تدريب إدارة الفعاليات، النمو المهني أكادير، دعم الوظائف الدولية، تدريب وظائف مخصص، فرص العمل في أكادير، تدريب الترويج عبر الإنترنت، إنشاء الأعمال أكادير، حلول تدريب شاملة، تطوير المهارات أكادير، أفضل تدريب في أكادير، دورات مهنية متقدمة، دعم مهني خبير" />
+        <title>{metaData.title}</title>
+        <meta name="description" content={metaData.description} />
+        <meta name="keywords" content={metaData.keywords} />
       </Helmet>
 
       <Navbar/>

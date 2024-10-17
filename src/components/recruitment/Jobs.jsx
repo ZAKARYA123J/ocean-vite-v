@@ -4,13 +4,11 @@ import Navbar from '../navbar';
 import Footer from '../foooter';
 import { FaAngleRight, FaBriefcase, FaGlobeAmericas, FaLanguage, FaClock, FaFileAlt } from 'react-icons/fa'; // Professional icons
 import Whatp from '../WhatsAppFloatingButton';
-import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
-import Modal from 'react-modal'; // Import react-modal
-// Function to dynamically load job data based on the selected language
+import Modal from 'react-modal'; 
 import styled from 'styled-components';
 import { motion } from 'framer-motion'; // For smooth animations
-
+import axios from 'axios';
 // Function to load client data based on the language
 const loadClientData = (lang) => {
   switch (lang) {
@@ -39,20 +37,6 @@ const Container = styled.div`
   gap: 2rem;
 `;
 
-const Title = styled.h2`
-  font-size: 2.5rem;
-  font-weight: 700;
-  text-align: center;
-  color: #1f2937;
-  margin-bottom: 1rem;
-`;
-
-const Subtitle = styled.p`
-  font-size: 1rem;
-  color: #6b7280;
-  text-align: center;
-  margin-bottom: 2rem;
-`;
 
 const FilterContainer = styled.div`
   display: flex;
@@ -138,12 +122,6 @@ const JobDetail = styled.div`
   }
 `;
 
-const JobType = styled.span`
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: #3b82f6;
-  margin-top: 1rem;
-`;
 
 const ButtonWrapper = styled.div`
   padding: 1rem;
@@ -176,8 +154,15 @@ const JobListings = React.memo(() => {
   const [selectedType, setSelectedType] = useState('All');
   const { type } = useParams();
   const navigate = useNavigate();
+  const [metaData, setMetaData] = useState({
+    title: 'Jobs | Ocean Connecting',
+    description: 'Discover the global career opportunities we offer.',
+    keywords: '',
+  });
+
   const [jobs, setJob] = useState([]);
-  const { i18n, t } = useTranslation();
+  const { t } = useTranslation();
+  const { i18n } = useTranslation();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedJob, setSelectedJob] = useState(null);
   useEffect(() => {
@@ -186,6 +171,23 @@ const JobListings = React.memo(() => {
       setJob(data);
     };
     fetchData();
+  }, [i18n.language]);
+  useEffect(() => {
+    const fetchMetaData = async () => {
+      try {
+        const response = await axios.get(`https://hono-on-vercel123-54cp.vercel.app/api/meta`, {
+          params: {
+            page: 'jobs',
+            lang: i18n.language,
+          },
+        });
+        setMetaData(response.data);
+      } catch (error) {
+        console.error('Error fetching metadata:', error);
+      }
+    };
+
+    fetchMetaData();
   }, [i18n.language]);
 
   // Get unique job types for dropdown options
@@ -219,22 +221,18 @@ const JobListings = React.memo(() => {
     setIsModalOpen(false);
     setSelectedJob(null);
   };
+  console.log(metaData)
   return (
     <>
       <Helmet>
-        <title>Jobs | Ocean Connecting</title>
-        <meta name="description" content="Learn mornce." />
-        <meta name="keywords" content="international services, career support, document assistae about the Jobs we offer for international career and document assistance" />
+      <title>{metaData.title}</title>
+        <meta name="description" content={metaData.description} />
+        <meta name="keywords" content={metaData.keywords}/>
       </Helmet>
       <Navbar />
       <Section>
         <Container>
-          {/* Page Title */}
-          {/* <Title className="mt-10">{t(item.h1)}</Title>
-          <Subtitle>{t(item.Find)}</Subtitle> */}
          
-
-          {/* Dropdown for selecting job type */}
           <FilterContainer className='m-10'>
             <FilterSelect value={selectedType} onChange={handleTypeChange}>
               {jobTypes.map((type) => (

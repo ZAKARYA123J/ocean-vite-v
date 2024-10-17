@@ -1,6 +1,7 @@
-
-
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
+import { useLocation } from "react-router-dom";
 import LanguageSwitcher from "./LanguageSwitcher";
 import img from './ocean3.png';
 import { useTranslation } from "react-i18next";

@@ -17,6 +17,7 @@ import projectBetaLogo1 from '../assets/images/done/glass2.png';
 import projectBetaLogo2 from '../assets/images/done/glass5.png';
 import { Helmet } from 'react-helmet-async';
 // Translation resources
+
 const resources = {
   en: {
     translation: {
