@@ -173,30 +173,10 @@ const App=React.memo( function App() {
               </motion.div>
             }
           />
-
-          {/* Pages WITHOUT transitions to avoid layout issues */}
           <Route path="/team" element={<TeamPage />} />
           <Route path="/nurse" element={<TeamNurse />} />
           <Route path="/contract" element={<ContractPage />} />
           <Route path="/teamglass" element={<TeamGlass />} />
-          {/* Pages with custom transitions
-          <Route
-            path="/contract"
-            element={
-              <motion.div
-                style={pageStyle}
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.9 }}
-                transition={{
-                  duration: 0.7,
-                  ease: [0.42, 0, 0.58, 1],
-                }}
-              >
-                <ContractPage />
-              </motion.div>
-            }
-          /> */}
           <Route
             path="/languages"
             element={

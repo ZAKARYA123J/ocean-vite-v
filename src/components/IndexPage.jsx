@@ -11,7 +11,6 @@ import WhatsAppFloatingButton from './WhatsAppFloatingButton';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import styled from "styled-components";
-import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
 import LazyLoad from 'react-lazyload';
 const heroImage1 = 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Site%20ocean%2Fservice.png?alt=media&token=b54504fc-6722-431f-8787-d75218233c1b';
