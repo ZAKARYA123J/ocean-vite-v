@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FiCalendar, FiClock } from '../assets/icons/vander'; // Ensure these icons are imported correctly
 import { useTranslation } from 'react-i18next';
 import styled from "styled-components";
-
+import { Helmet } from 'react-helmet-async';
 // Function to load client data based on the language
 const loadClientData =async (lang) => {
   switch (lang) {
@@ -101,7 +101,7 @@ const CourseCard = () => {
   const [filter, setFilter] = useState('All');
   const { i18n, t } = useTranslation();
   const [bloggDta, setBlogdata] = useState([]);
-
+  
   useEffect(() => {
     loadClientData(i18n.language).then(data => setBlogdata(data));
   }, [i18n.language]);
@@ -127,6 +127,7 @@ const CourseCard = () => {
   ];
 
   return (
+    <>
     <section className="relative md:py-24 py-16" id="blog">
       <div className="container mx-auto px-6 lg:px-8">
         {/* Title and Description */}
@@ -179,6 +180,7 @@ const CourseCard = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 
