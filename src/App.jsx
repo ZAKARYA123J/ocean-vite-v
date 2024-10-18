@@ -17,6 +17,7 @@ import { HelmetProvider } from "react-helmet-async";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { AnimatePresence, motion } from "framer-motion";
 import { ImageProvider } from "./components/ImageContext.jsx";
+import { Analytics } from "@vercel/analytics/react"
 import TeamGlass from "./components/TeamGlass";
 const App=React.memo( function App() {
   const location = useLocation();
@@ -215,6 +216,7 @@ const App=React.memo( function App() {
             }
           />
         </Routes>
+        <Analytics/>
       </AnimatePresence>
       <SpeedInsights />
     </HelmetProvider>
