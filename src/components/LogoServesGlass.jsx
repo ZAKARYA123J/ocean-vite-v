@@ -3,9 +3,6 @@ import { useTranslation } from 'react-i18next';
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
-import projectAlphaLogo from '../assets/images/done/glass3.png';
-import projectBetaLogo from '../assets/images/done/ocean3.png';
-import solarcell from '../assets/images/done/solar-cell.png';
 import test from '../assets/images/done/test.svg';
 import bardage from '../assets/images/done/bardage.svg';
 import vitrine from '../assets/images/done/vitrine.svg';
@@ -70,7 +67,7 @@ const fetchProjects = () => {
         { nameKey: 'services.facade', logoPath: vitrine },
         { nameKey: 'services.bardage', logoPath: bardage },
         { nameKey: 'services.exterior_coating', logoPath: test },
-        { nameKey: 'services.sign', logoPath: solarcell },
+        { nameKey: 'services.sign', logoPath: test },
       ]);
     }, 1000);
   });
