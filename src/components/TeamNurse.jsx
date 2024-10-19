@@ -4,7 +4,6 @@ import Footer from './foooter';
 import nurseVideo from '../assets/images/done/TeamNurse/nurse2.mp4';
 import CardNurse from './CardNurse';
 import ContactForm from './ContactForm';
-import TestimonialsSection from './TestimonialsSection';
 import ServicesSection from './ServicesSection';
 import './i18n';
 import { useTranslation } from 'react-i18next';
