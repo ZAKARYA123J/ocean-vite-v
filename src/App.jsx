@@ -71,7 +71,7 @@ const App=React.memo( function App() {
             }
           />
           <Route
-            path="/formation"
+            path="/formation-professionnelle-agadir"
             element={
               <motion.div
                 style={pageStyle}
@@ -89,7 +89,7 @@ const App=React.memo( function App() {
             }
           />
           <Route
-            path="/formation/:id"
+            path="/formation-professionnelle-agadir/:name"
             element={
               <motion.div
                 style={pageStyle}
@@ -101,7 +101,7 @@ const App=React.memo( function App() {
                   ease: [0.25, 0.46, 0.45, 0.94],
                 }}
               >
-                <IndexFive />
+                <IndexFive/>
               </motion.div>
             }
           />
@@ -173,10 +173,10 @@ const App=React.memo( function App() {
               </motion.div>
             }
           />
-          <Route path="/team" element={<TeamPage />} />
-          <Route path="/nurse" element={<TeamNurse />} />
-          <Route path="/contract" element={<ContractPage />} />
-          <Route path="/teamglass" element={<TeamGlass />} />
+          <Route path="/developpement-services-agadir" element={<TeamPage />} />
+          <Route path="/soins-infirmiers-agadir" element={<TeamNurse />} />
+          <Route path="/recrutement-international-agadir" element={<ContractPage />} />
+          <Route path="/nettoyage-facades-agadir" element={<TeamGlass />} />
           <Route
             path="/languages"
             element={

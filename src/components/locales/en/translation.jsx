@@ -128,7 +128,8 @@ export const blogDataEN = [
         },
         type: 'language',
         button: "Learn more",
-        show: "show all"
+        show: "show all",
+        Link:"linguistique-agadir" 
     },
     {
         id: 2,
@@ -141,7 +142,8 @@ export const blogDataEN = [
         detail: 'Elevate your career in the aviation industry with our comprehensive Airport Check-in Agent Training at [Your Company Name]. This program equips professionals with the essential skills and knowledge to manage passenger check-in efficiently, ensuring smooth airport operations.What You Will Learn',
         type: 'Formation',
         button: "Learn more",
-        show: "show all"
+        show: "show all",
+        Link:"agent-checkin-aeroport-agadir" 
     },
     {
         id: 3,
@@ -154,7 +156,8 @@ export const blogDataEN = [
         detail: 'Transform your passion for music into a professional career with our comprehensive DJ Training at [Your Company Name]. This program is designed to equip aspiring DJs with the skills necessary to thrive in the music industry, whether you’re just starting or looking to refine your craft.What You Will Learn',
         type: 'Formation',
         button: "Learn more",
-        show: "show all"
+        show: "show all",
+        Link:"dj-agadir" 
     },
     {
         id: 4,
@@ -167,7 +170,8 @@ export const blogDataEN = [
         detail: 'This training offers a comprehensive experience for sailing enthusiasts, including theoretical and practical courses on safety, sailing techniques, and coastal and offshore navigation. Sessions are led by experienced instructors and include intensive sea practice. Participants can obtain recognized certifications, allowing them to pilot various types of boats and sailboats. Join us to develop your nautical skills and experience an unforgettable maritime adventure!',
         type: 'Formation',
         button: "Learn more",
-        show: "show all"
+        show: "show all",
+        Link:"conduitendes-bateaux-voliers-agadir" 
 
     },
     {
@@ -181,7 +185,8 @@ export const blogDataEN = [
         detail: 'The Home & Family training is designed to provide practical skills and in-depth knowledge on managing domestic life and family relationships. It covers various topics from home organization to family financial management, communication techniques, and conflict resolution. The goal is to provide participants with the necessary tools to create a harmonious and well-organized family environment.',
         type: 'Formation',
         button: "Learn more",
-        show: "show all"
+        show: "show all",
+        Link:"home-family-agadir"  
     },
     {
         id: 6,
@@ -194,7 +199,8 @@ export const blogDataEN = [
         detail: 'The VAR (Value Added Resellers) installation and usage training aims to provide professionals with the skills needed to install, configure, and use VAR technology solutions effectively. It covers hardware and software installation steps, advanced configuration, and daily use of tools and applications. Participants also learn to provide technical support, diagnose and resolve issues, perform preventive maintenance, and optimize solution performance. This training is essential for effective VAR solution management and ensuring optimal system performance.',
         type: 'Formation',
         button: "Learn more",
-        show: "show all"
+        show: "show all",
+        Link:"installation-usilisation-var-agadir" 
     },
     {
         id: 7,
@@ -207,7 +213,8 @@ export const blogDataEN = [
         detail: 'Maritime navigation training teaches participants the essential skills to navigate safely at sea, covering the use of navigation tools such as nautical charts and GPS systems, as well as understanding international regulations. Participants learn to plan routes, manage weather conditions, and ensure the safety of the vessel and crew. The training also includes rescue techniques and emergency management, ensuring effective and safe navigation while adhering to maritime rules.',
         type: 'Formation',
         button: "Learn more",
-        show: "show all"
+        show: "show all",
+        Link:"navigation-maritime-agadir"
     },
     {
         id: 8,
@@ -220,7 +227,8 @@ export const blogDataEN = [
         detail: 'The training on precious stones and metals provides an in-depth understanding of the characteristics, evaluation, and maintenance of these valuable materials. Participants learn to identify and evaluate precious stones and metals using quality and certification criteria. The training also covers treatment and maintenance techniques to preserve their value, as well as market trends and business practices. Additionally, it addresses ethical issues and sustainable practices related to the extraction and trade of these resources.',
         type: 'Formation',
         button: "Learn more",
-        show: "show all"
+        show: "show all",
+        Link:"pierres-métaux-précieux-agadir"
     },
     {
         id: 9,
@@ -232,7 +240,8 @@ export const blogDataEN = [
         desc: 'The training to develop agriculture and fishing aims to optimize...',
         type: 'Formation',
         button: "Learn more",
-        show: "show all"
+        show: "show all",
+        Link:"argriculture-pêche-agadir"
     },
     {
         id: 10,
@@ -245,7 +254,8 @@ export const blogDataEN = [
         detail: 'The training in Earth sciences and seismology offers an in-depth understanding of geological processes, earthquake mechanisms, and techniques for assessing seismic risks. It covers fundamental principles of geology, tectonic plate movements, and earthquake causes, as well as methods for monitoring and predicting earthquakes. Participants also learn to assess seismic risks, develop strategies to reduce risks, and prepare infrastructure and communities for the impacts of earthquakes. This training is essential for researchers, engineers, and risk management professionals looking to enhance their expertise in seismology and risk reduction.',
         type: 'Formation',
         button: "Learn more",
-        show: "show all"
+        show: "show all",
+       Link:"sciences-terre-séismes-agadir"
     },
     {
         id: 11,
@@ -258,7 +268,8 @@ export const blogDataEN = [
         detail: 'National and International Recruitment Studies and Training (EFRNI) is a specialized training program aimed at developing advanced skills in the recruitment field, both nationally and internationally. It covers the challenges related to recruitment in various cultural and legal contexts, while teaching the use of modern tools to identify and attract talent. The training also emphasizes optimizing selection processes and the importance of talent management to ensure employee retention and development from a global perspective.',
         type: 'Formation',
         button: "Learn more",
-        show: "show all"
+        show: "show all",
+        Link:"national-Et-international-agadir"
     },
     {
         id: 12,
@@ -271,7 +282,8 @@ export const blogDataEN = [
         detail: 'The training "Learning Theatre for Children" introduces young people to the art of drama by developing their self-confidence, communication skills, and creativity. Through role-playing, improvisations, and creative exercises, children learn to express their emotions and ideas while enhancing their teamwork and group work skills. The training also covers the basics of theatre, such as public speaking and managing stage fright, offering an enriching experience that stimulates both personal development and social skills.',
         type: 'Formation',
         button: "Learn more",
-        show: "show all"
+        show: "show all",
+        Link:"national-Et-international-agadir"
     },
     {
         id: 13,
@@ -284,7 +296,8 @@ export const blogDataEN = [
         detail: 'The elevator training is designed to provide participants with a comprehensive understanding of elevator systems, from installation to maintenance. It covers the principles of elevator operation, safety procedures, and troubleshooting techniques. Participants will learn to install, maintain, and repair elevators while adhering to safety and regulatory standards. The training is ideal for technicians, engineers, and anyone involved in the elevator sector, offering the skills needed to ensure the proper functioning and safety of equipment.',
         type: 'Formation',
         button: "Learn more",
-        show: "show all"
+        show: "show all",
+        Link:"théatre-enfants-agadir"
     },
     {
         id: 14,
@@ -297,7 +310,8 @@ export const blogDataEN = [
         detail: 'The training for driving trains and trams prepares participants to operate these vehicles safely and efficiently. It covers the technical aspects of driving, including handling controls, managing signaling systems, and adhering to safety procedures. Participants also learn to manage emergency situations, optimize energy consumption, and ensure passenger comfort. The training includes practical and theoretical simulations to develop in-depth skills in driving and managing railway and tramway operations while complying with current regulations.',
         type: 'Formation',
         button: "Learn more",
-        show: "show all"
+        show: "show all",
+          Link:"train-tramway-agadir"
     },
 ];
 
@@ -323,7 +337,7 @@ export const serviceDataEN = [
         para5: "Added Value",
         desc_para5: "Our training stands out for its flexibility and practical approach, incorporating the latest trends and technologies to offer relevant and immediately applicable solutions on the field.",
         Bouton : "Learn more",
-        link:"/formation",
+        link:"/formation-professionnelle-agadir",
 
     },
     {
@@ -343,7 +357,7 @@ export const serviceDataEN = [
         para5: "Added Value",
         desc_para5: "Our expertise in facade cleaning guarantees lasting results and prompt service, while adhering to the strictest environmental and safety standards.",
         Bouton : "Learn more",
-        link:"/teamglass"
+       link: "/nettoyage-facades-agadir"
     },
     {
         id: 3,
@@ -381,7 +395,7 @@ export const serviceDataEN = [
         para5: "Added Value",
         desc_para5: "Our personalized approach and technical expertise ensure results that not only meet but exceed your expectations, offering a functional, aesthetically pleasing, and search-engine-optimized website.",
         Bouton : "Learn more",
-        link: "/team" ,
+        link: "/developpement-services-agadir" ,
     },
     {
         id: 5,
@@ -417,7 +431,7 @@ export const serviceDataEN = [
         para5: "Added Value",
         Bouton : "Learn more",
         desc_para5: "Our expertise in international recruitment allows us to find talent suited to your company's specific requirements, while offering personalized service and support throughout the recruitment process to ensure a successful integration.",
-        link:"/nurse",
+        link:"/soins-infirmiers-agadir",
     }
 ]
 export const TitleEN = [

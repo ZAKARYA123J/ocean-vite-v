@@ -220,7 +220,7 @@ className={`navbar fixed top-0 w-full z-50 transition-all duration-300 ${isMobil
 
                 {/* Lien vers la Formation */}
                 <li className="nav-item ms-0">
-                  <Link className="nav-link" to="/formation" onClick={closeDropdownOnLinkClick}>
+                  <Link className="nav-link" to="/formation-professionnelle-agadir" onClick={closeDropdownOnLinkClick}>
                     {t(item.Formation)}
                   </Link>
                 </li>

@@ -126,7 +126,8 @@ export const blogDataFR = [
         button: "En savoir plus",
         data: "Pour chaque cours que vous terminez, vous recevrez une certification que vous pourrez partager sur vos réseaux sociaux (par exemple, LinkedIn). Chaque certification a un numéro d'authentification unique qui permet de la vérifier.",
         reserver: "Réservé",
-        show: "Tout afficher"
+        show: "Tout afficher",
+        Link:"linguistique-agadir" 
     },
     {
         id: 2,
@@ -141,7 +142,8 @@ export const blogDataFR = [
         button: "En savoir plus",
         data: "Pour chaque cours que vous terminez, vous recevrez une certification que vous pourrez partager sur vos réseaux sociaux (par exemple, LinkedIn). Chaque certification a un numéro d'authentification unique qui permet de la vérifier.",
         reserver: "Réservé",
-        show: "Tout afficher"
+        show: "Tout afficher",
+        Link:"agent-checkin-aeroport-agadir" 
     },
     {
         id: 3,
@@ -156,7 +158,8 @@ export const blogDataFR = [
         button: "En savoir plus",
         data: "Pour chaque cours que vous terminez, vous recevrez une certification que vous pourrez partager sur vos réseaux sociaux (par exemple, LinkedIn). Chaque certification a un numéro d'authentification unique qui permet de la vérifier.",
         reserver: "Réservé",
-        show: "Tout afficher"
+        show: "Tout afficher",
+        Link:"dj-agadir" 
     },
     {
         id: 4,
@@ -171,7 +174,8 @@ export const blogDataFR = [
         button: "En savoir plus",
         data: "Pour chaque cours que vous terminez, vous recevrez une certification que vous pourrez partager sur vos réseaux sociaux (par exemple, LinkedIn). Chaque certification a un numéro d'authentification unique qui permet de la vérifier.",
         reserver: "Réservé",
-        show: "Tout afficher"
+        show: "Tout afficher",
+        Link:"conduitendes-bateaux-voliers-agadir" 
     },
     {
         id: 5,
@@ -186,7 +190,8 @@ export const blogDataFR = [
         button: "En savoir plus",
         data: "Pour chaque cours que vous terminez, vous recevrez une certification que vous pourrez partager sur vos réseaux sociaux (par exemple, LinkedIn). Chaque certification a un numéro d'authentification unique qui permet de la vérifier.",
         reserver: "Réservé",
-        show: "Tout afficher"
+        show: "Tout afficher",
+        Link:"home-family-agadir" 
     },
     {
         id: 6,
@@ -201,7 +206,8 @@ export const blogDataFR = [
         button: "En savoir plus",
         data: "Pour chaque cours que vous terminez, vous recevrez une certification que vous pourrez partager sur vos réseaux sociaux (par exemple, LinkedIn). Chaque certification a un numéro d'authentification unique qui permet de la vérifier.",
         reserver: "Réservé",
-        show: "Tout afficher"
+        show: "Tout afficher",
+        Link:"installation-usilisation-var-agadir"   
     },
     {
         id: 7,
@@ -216,7 +222,8 @@ export const blogDataFR = [
         button: "En savoir plus",
         data: "Pour chaque cours que vous terminez, vous recevrez une certification que vous pourrez partager sur vos réseaux sociaux (par exemple, LinkedIn). Chaque certification a un numéro d'authentification unique qui permet de la vérifier.",
         reserver: "Réservé",
-        show: "Tout afficher"
+        show: "Tout afficher",
+        Link:"navigation-maritime-agadir"
     },
     {
         id: 8,
@@ -231,7 +238,8 @@ export const blogDataFR = [
         button: "En savoir plus",
         data: "Pour chaque cours que vous terminez, vous recevrez une certification que vous pourrez partager sur vos réseaux sociaux (par exemple, LinkedIn). Chaque certification a un numéro d'authentification unique qui permet de la vérifier.",
         reserver: "Réservé",
-        show: "Tout afficher"
+        show: "Tout afficher",
+         Link:"pierres-métaux-précieux-agadir"
     },
     {
         id: 9,
@@ -246,7 +254,8 @@ export const blogDataFR = [
         button: "En savoir plus",
         data: "Pour chaque cours que vous terminez, vous recevrez une certification que vous pourrez partager sur vos réseaux sociaux (par exemple, LinkedIn). Chaque certification a un numéro d'authentification unique qui permet de la vérifier.",
         reserver: "Réservé",
-        show: "Tout afficher"
+        show: "Tout afficher",
+         Link:"argriculture-pêche-agadir"
     },
     {
         id: 10,
@@ -261,7 +270,8 @@ export const blogDataFR = [
         button: "En savoir plus",
         data: "Pour chaque cours que vous terminez, vous recevrez une certification que vous pourrez partager sur vos réseaux sociaux (par exemple, LinkedIn). Chaque certification a un numéro d'authentification unique qui permet de la vérifier.",
         reserver: "Réservé",
-        show: "Tout afficher"
+        show: "Tout afficher",
+         Link:"sciences-terre-séismes-agadir"
     },
     {
         id: 11,
@@ -276,7 +286,8 @@ export const blogDataFR = [
         button: "En savoir plus",
         data: "Pour chaque cours que vous terminez, vous recevrez une certification que vous pourrez partager sur vos réseaux sociaux (par exemple, LinkedIn). Chaque certification a un numéro d'authentification unique qui permet de la vérifier.",
         reserver: "Réservé",
-        show: "Tout afficher"
+        show: "Tout afficher",
+        Link:"national-Et-international-agadir"
     },
     {
         id: 12,
@@ -291,7 +302,8 @@ export const blogDataFR = [
         button: "En savoir plus",
         data: "Pour chaque cours que vous terminez, vous recevrez une certification que vous pourrez partager sur vos réseaux sociaux (par exemple, LinkedIn). Chaque certification a un numéro d'authentification unique qui permet de la vérifier.",
         reserver: "Réservé",
-        show: "Tout afficher"
+        show: "Tout afficher",
+        Link:"théatre-enfants-agadir"
     },
     {
         id: 13,
@@ -306,7 +318,8 @@ export const blogDataFR = [
         button: "En savoir plus",
         data: "Pour chaque cours que vous terminez, vous recevrez une certification que vous pourrez partager sur vos réseaux sociaux (par exemple, LinkedIn). Chaque certification a un numéro d'authentification unique qui permet de la vérifier.",
         reserver: "Réservé",
-        show: "Tout afficher"
+        show: "Tout afficher",
+         Link:"ascenseur-agadir"
     },
     {
         id: 14,
@@ -321,7 +334,8 @@ export const blogDataFR = [
         button: "En savoir plus",
         data: "Pour chaque cours que vous terminez, vous recevrez une certification que vous pourrez partager sur vos réseaux sociaux (par exemple, LinkedIn). Chaque certification a un numéro d'authentification unique qui permet de la vérifier.",
         reserver: "Réservé",
-        show: "Tout afficher"
+        show: "Tout afficher",
+        Link:"train-tramway-agadir"
     },
 
 ]
@@ -347,7 +361,7 @@ export const serviceDataFR = [
         para5: "Valeur Ajoutée",
         desc_para5: "Nos formations se distinguent par leur flexibilité et leur approche pratique, intégrant les dernières tendances et technologies pour offrir des solutions pertinentes et immédiatement applicables sur le terrain.",
         Bouton: "Apprendre encore plus",
-        link:"/formation",
+        link:"/formation-professionnelle-agadir",
 
     },
     {
@@ -367,7 +381,7 @@ export const serviceDataFR = [
         para5: "Valeur Ajoutée",
         desc_para5: "Notre expertise en nettoyage des façades garantit des résultats durables et une intervention rapide, tout en respectant les normes environnementales et de sécurité les plus strictes.",
         Bouton: "Apprendre encore plus",
-        link: "/teamglass"
+        link: "/nettoyage-facades-agadir"
     },
 
     {
@@ -407,7 +421,7 @@ export const serviceDataFR = [
         para5: "Valeur Ajoutée",
         desc_para5: "Notre approche personnalisée et notre expertise technique garantissent des résultats qui non seulement répondent à vos attentes mais les dépassent, en offrant un site web fonctionnel, esthétiquement plaisant et optimisé pour les moteurs de recherche.",
         Bouton: "Apprendre encore plus",
-        link: "/team" ,
+        link: "/developpement-services-agadir" ,
 
     },
     {
@@ -447,7 +461,7 @@ export const serviceDataFR = [
         para5: "Added Value",
         Bouton: "Apprendre encore plus",
         desc_para5: "Our expertise in international recruitment allows us to find talent suited to your company's specific requirements, while offering personalized service and support throughout the recruitment process to ensure a successful integration.",
-        link:"/nurse",
+        link:"/soins-infirmiers-agadir",
     }
 ]
 export const Titlefr = [

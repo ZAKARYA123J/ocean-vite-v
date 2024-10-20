@@ -79,7 +79,7 @@ const Blogs=React.memo( function Blogs() {
       navigator.share({
         title: item.title,
         text: item.desc,
-        url: window.location.origin + `/formation/${item.id}`,
+        url: window.location.origin + `/formation-professionnelle-agadir/${item.Link}`,
       }).catch((error) => console.error('Error sharing', error));
     } else {
       alert('Share feature is not supported in this browser. Please copy the link manually.');
@@ -108,19 +108,9 @@ const Blogs=React.memo( function Blogs() {
                 />
               </div>
               <SlideInContent className="p-6">
-                {/* Meta Information */}
-                {/* <div className="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-4">
-                  <span className="flex items-center">
-                    <FiCalendar className="mr-1.5" />
-                    {item.date}
-                  </span>
-                  <span className="flex items-center ml-4">
-                    <FiClock className="mr-1.5" />
-                    5 min read
-                  </span>
-                </div> */}
+        
 
-                <Link to={`/formation/${item.id}`} className="block">
+                <Link to={`/formation-professionnelle-agadir/${item.Link}`} className="block">
                   <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-blue-500 transition-colors">
                     {t(item.title)}
                   </h4>
@@ -130,7 +120,7 @@ const Blogs=React.memo( function Blogs() {
                 </p>
 
                 <div className="flex items-center justify-between">
-                  <Link to={`/formation/${item.id}`}>
+                  <Link to={`/formation-professionnelle-agadir/${item.Link}`}>
                     <button className="bg-blue-500 text-white rounded-full px-4 py-2 mt-2 hover:bg-blue-600 transition">
                       {t(item.button)} <i className="mdi mdi-chevron-right align-middle ml-1"></i>
                     </button>

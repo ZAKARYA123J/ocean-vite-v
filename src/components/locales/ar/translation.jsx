@@ -108,7 +108,8 @@ export const blogDataAR = [
         type: 'language',
         button:"اقرأ المزيد",
         reserver: "للحجز",
-        show:"إظهار الكل"
+        show:"إظهار الكل",
+        Link:"linguistique-agadir" 
     },
     {
         id: 2,
@@ -122,7 +123,8 @@ export const blogDataAR = [
         type: 'Formation',
         button:"اقرأ المزيد",
         reserver: "للحجز",
-        show:"إظهار الكل"
+        show:"إظهار الكل",
+        Link:"agent-checkin-aeroport-agadir" 
     },
     {
         id: 3,
@@ -136,7 +138,8 @@ export const blogDataAR = [
         type: 'Formation',
         button:"اقرأ المزيد",
         reserver: "للحجز",
-        show:"إظهار الكل"
+        show:"إظهار الكل",
+        Link:"dj-agadir" 
     },
     {
         id: 4,
@@ -150,7 +153,8 @@ export const blogDataAR = [
         type: 'Formation',
         button:"اقرأ المزيد",
         reserver: "للحجز",
-        show:"إظهار الكل"
+        show:"إظهار الكل",
+        Link:"conduitendes-bateaux-voliers-agadir" 
     },
     {
         id: 5,
@@ -164,7 +168,8 @@ export const blogDataAR = [
         type: 'Formation',
         button:"اقرأ المزيد",
         reserver: "للحجز",
-        show:"إظهار الكل"
+        show:"إظهار الكل",
+        Link:"home-family-agadir" 
     },
     {
         id: 6,
@@ -178,7 +183,8 @@ export const blogDataAR = [
         type: 'Formation',
         button:"اقرأ المزيد",
         reserver: "للحجز",
-        show:"إظهار الكل"
+        show:"إظهار الكل",
+        Link:"installation-usilisation-var-agadir"   
     },
     {
         id: 7,
@@ -192,7 +198,8 @@ export const blogDataAR = [
         type: 'Formation',
         button:"اقرأ المزيد",
         reserver: "للحجز",
-        show:"إظهار الكل"
+        show:"إظهار الكل",
+        Link:"navigation-maritime-agadir"
     },
     {
         id: 8,
@@ -206,7 +213,8 @@ export const blogDataAR = [
         type: 'Formation',
         button:"اقرأ المزيد",
         reserver: "للحجز",
-        show:"إظهار الكل"
+        show:"إظهار الكل",
+        Link:"pierres-métaux-précieux-agadir"
     },
     {
         id: 9,
@@ -220,7 +228,8 @@ export const blogDataAR = [
         type: 'Formation',
         button:"اقرأ المزيد",
         reserver: "للحجز",
-        show:"إظهار الكل"
+        show:"إظهار الكل",
+        Link:"argriculture-pêche-agadir"
     },
     {
         id: 10,
@@ -234,7 +243,8 @@ export const blogDataAR = [
         type: 'Formation',
         button:"اقرأ المزيد",
         reserver: "للحجز",
-        show:"إظهار الكل"
+        show:"إظهار الكل",
+         Link:"sciences-terre-séismes-agadir"
     },
     {
         id: 11,
@@ -248,7 +258,8 @@ export const blogDataAR = [
         type: 'Formation',
         button:"اقرأ المزيد",
         reserver: "للحجز",
-         show:"إظهار الكل"
+         show:"إظهار الكل",
+         Link:"national-Et-international-agadir"
     },
     {
         id: 12,
@@ -262,7 +273,8 @@ export const blogDataAR = [
         type: 'Formation',
         button:"اقرأ المزيد",
         reserver: "للحجز",
-         show:"إظهار الكل"
+         show:"إظهار الكل",
+         Link:"théatre-enfants-agadir"
     },
     {
         id: 13,
@@ -276,7 +288,8 @@ export const blogDataAR = [
         type: 'Formation',
         button:"اقرأ المزيد",
         reserver: "للحجز",
-         show:"إظهار الكل"
+         show:"إظهار الكل",
+         Link:"ascenseur-agadir"
     },
     {
         id: 14,
@@ -290,7 +303,8 @@ export const blogDataAR = [
         type: 'تكوين',
         button:"اقرأ المزيد",
         reserver: "للحجز",
-         show:"إظهار الكل"
+         show:"إظهار الكل",
+          Link:" train-tramway-agadir"
     },
 ]
 export const serviceDataAR = [
@@ -314,7 +328,7 @@ export const serviceDataAR = [
         para5: "القيمة المضافة",
         desc_para5: "تتميز تدريباتنا بمرونتها ونهجها العملي، حيث ندمج أحدث الاتجاهات والتقنيات لتقديم حلول ملائمة وقابلة للتطبيق على الفور في الميدان.",
         Bouton : "تعرف أكثر",
-        link:"/formation",
+        link:"/formation-professionnelle-agadir",
 
     },
     {
@@ -334,7 +348,7 @@ export const serviceDataAR = [
         para5: "القيمة المضافة",
         desc_para5: "تضمن خبرتنا في تنظيف الواجهات نتائج طويلة الأمد وتدخل سريع، مع احترام أعلى المعايير البيئية والأمنية.",
         Bouton : "تعرف أكثر",
-link:"/teamglass"
+link: "/nettoyage-facades-agadir"
     },
     {
         id: 3,
@@ -373,7 +387,7 @@ link:"/teamglass"
         para5: "القيمة المضافة",
         desc_para5: "تضمن مقاربتنا الشخصية وخبرتنا التقنية تحقيق نتائج لا تقتصر على تلبية توقعاتك بل تتجاوزها، من خلال تقديم موقع ويب وظيفي، وجمالي، ومحسن لمحركات البحث.",
         Bouton : "تعرف أكثر",
-        link: "/team" ,
+        link: "/developpement-services-agadir" ,
 
     },
     {
@@ -411,7 +425,7 @@ link:"/teamglass"
         para5: "Added Value",
         Bouton : "تعرف أكثر",
         desc_para5: "Our expertise in international recruitment allows us to find talent suited to your company's specific requirements, while offering personalized service and support throughout the recruitment process to ensure a successful integration.",
-        link:"/nurse",
+        link:"/soins-infirmiers-agadir",
     }
 ]
 export const TitleAR=[

@@ -1,6 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import { FiCalendar, FiClock } from '../assets/icons/vander'; // Ensure these icons are imported correctly
-import { useTranslation } from 'react-i18next';
+
 import styled from "styled-components";
 import { Helmet } from 'react-helmet-async';
 // Function to load client data based on the language
@@ -101,7 +99,7 @@ const CourseCard = () => {
   const [filter, setFilter] = useState('All');
   const { i18n, t } = useTranslation();
   const [bloggDta, setBlogdata] = useState([]);
-  
+  const { name } = useParams();
   useEffect(() => {
     loadClientData(i18n.language).then(data => setBlogdata(data));
   }, [i18n.language]);
@@ -130,14 +128,7 @@ const CourseCard = () => {
     <>
     <section className="relative md:py-24 py-16" id="blog">
       <div className="container mx-auto px-6 lg:px-8">
-        {/* Title and Description */}
         <div className="grid grid-cols-1 pb-6 text-center">
-          {/* <h3 className="font-semibold text-2xl leading-normal">{t('Courses')}</h3>
-          <p className="text-slate-400 max-w-xl mx-auto mb-8">
-            {t('Explore a variety of courses to boost your skills and knowledge.')}
-          </p> */}
-
-          {/* Search and Filter Inputs */}
           <div className="relative flex justify-center items-center mt-4">
             <div className="relative flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4 p-6">
               <FilterInput
@@ -165,13 +156,13 @@ const CourseCard = () => {
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-6 gap-6">
           {filteredBlogData.map((item, index) => (
             <CardContainer key={index}>
-              <Link to={`/formation/${index + 1}`}>
+              <Link to={`/formation-professionnelle-agadir/${item.Link}`}>
                 <CardImage src={item.image} alt={item.title} />
               </Link>
               <div className="mt-4">
                 <Title>{t(item.title)}</Title>
                 <Description>{t(item.desc)}</Description>
-                <ButtonLink to={`/formation/${index + 1}`}>
+                <ButtonLink to={`/formation-professionnelle-agadir/${item.Link}`}>
                   {t(item.button)} <i className="mdi mdi-chevron-right align-middle"></i>
                 </ButtonLink>
               </div>
