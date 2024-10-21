@@ -1,6 +1,6 @@
 import React from "react"; 
 import styled, { keyframes } from "styled-components";
-import { FiCalendar, FiClock, FiShare2, FiArrowRight } from 'react-icons/fi'; // Import the arrow icon
+import {  FiShare2, FiArrowRight } from 'react-icons/fi'; // Import the arrow icon
 
 // Share button styled component  
 const ShareButton = styled.button`
@@ -138,7 +138,7 @@ const Blogs=React.memo( function Blogs() {
 
         {/* Button to view all trainings with an arrow icon, centered */}
         <div className="flex justify-center mt-12">
-          <Link to="/formation">
+          <Link to="/formation-professionnelle-agadir">
             <button className="bg-blue-500 text-white rounded-full px-6 py-3 hover:bg-blue-600 transition flex items-center justify-center">
               {t('See All Trainings')}
               <FiArrowRight className="ml-2" /> {/* Icon added next to the text */}
