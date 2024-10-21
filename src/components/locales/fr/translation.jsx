@@ -40,7 +40,6 @@ import resume from '../../../assets/images/job/resume.png'
 import recrutocean from '../../../assets/images/service/recrutocean.png'
 import recrutinter from '../../../assets/images/service/recrutinter2.png'
 import form from '../../../assets/images/form.pdf'
-import { FaGithub, FaLinkedin, FaLock, FaComments, FaCode } from "react-icons/fa";
 // export const teamTitle = "Rencontrez Notre Équipe de Développement";
 // export const teamDescription = "Nous sommes une équipe passionnée d'experts dédiée à la création de solutions innovantes. Explorez plus sur chaque membre de l'équipe ci-dessous et découvrez les technologies dans lesquelles ils excellent.";
 // export const membersTitle = "Nos Membres de l'Équipe";
@@ -856,4 +855,4 @@ export const footerDataFr = {
         "message": "Nous vous remercions de votre visite sur notre site web et vous souhaitons la bienvenue à ",
 
     }
-}; // Changed from array to object
+}; 

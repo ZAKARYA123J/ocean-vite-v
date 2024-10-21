@@ -152,13 +152,25 @@ const loadClientData =async (lang) => {
 
     return () => clearTimeout(timeout);
   }, [currentImage, images.length]);
-
+  const aggregateRating = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Ocean Connecting Service",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "25"
+    }
+  };
   return (
     <Suspense fallback={<Loader>Loading Ocean connecting...</Loader>}>
       <Helmet>
         <title>{metaData.title}</title>
         <meta name="description" content={metaData.description} />
         <meta name="keywords" content={metaData.keywords} />
+        <script type="application/ld+json">
+          {JSON.stringify(aggregateRating)}
+        </script>
       </Helmet>
 
       <Navbar/>
