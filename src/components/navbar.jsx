@@ -196,13 +196,20 @@ className={`navbar fixed top-0 w-full z-50 transition-all duration-300 ${isMobil
 
                 {/* Dropdown des Services */}
                 <li className="nav-item ms-0 relative">
-                  <button
-                    className="nav-link flex items-center transition duration-300 ease-in-out transform hover:scale-105"
-                    onClick={() => handleDropdownToggle("servicesOpen")}
-                  >
-                    {t(item.Services)}
-                    <RiArrowDropDownLine className="ml-1" fontSize={25} />
-                  </button>
+                <div className="flex items-center">
+  <button
+    className="nav-link transition duration-300 ease-in-out transform hover:scale-105"
+    onClick={() => handleDropdownToggle("servicesOpen")}
+  >
+    {t(item.Services)}
+  </button>
+  <RiArrowDropDownLine
+    className=" cursor-pointer "
+    fontSize={24}
+    onClick={() => handleDropdownToggle("servicesOpen")}
+  />
+</div>
+
                   <ul className={`bg-white text-dark shadow-lg rounded-lg p-4 ${dropdowns === "servicesOpen" ? "show" : ""}`}>
                     {limitedItems.map((skill, idx) => (
                       <li className="nav-item" key={idx}>
