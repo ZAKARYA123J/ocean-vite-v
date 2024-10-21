@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from "react-router-dom";
 import Navbar from "../navbar";
 import Footer from "../foooter"; // Note: Corrected 'foooter' to 'footer'
@@ -6,15 +6,13 @@ import WhatsAppFloatingButton from '../WhatsAppFloatingButton';
 import Switcher from "../switcher";
 import { useTranslation } from 'react-i18next';
 import { FaImages } from "react-icons/fa";
-import { motion } from 'framer-motion';
-import styled from 'styled-components';
 
 const fetchAPIData = async () => {
     const response = await fetch('https://hono-on-vercel123-54cp.vercel.app/api/galleries');
     const data = await response.json();
     return data;
 };
-const Gallery = () => {
+const Gallery = React.memo(() => {
     const [galleryData, setGalleryData] = useState([]);
     const { i18n, t } = useTranslation();
     useEffect(() => {
@@ -78,5 +76,5 @@ const Gallery = () => {
             <Switcher />
         </div>
     );
-};
+});
 export default Gallery;

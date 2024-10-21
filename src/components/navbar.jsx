@@ -93,6 +93,8 @@ export default function Navbar() {
   const closeDropdownOnLinkClick = () => {
     setDropdowns(null); // Fermer les dropdowns
   };
+  const isArabic = i18n.language === 'ar';
+  const fontSize = isArabic ? 'font-bold' : 'text-base';
 const limitedItems=serviceData.slice(1,6)
   return (
     <>
@@ -185,9 +187,9 @@ className={`navbar fixed top-0 w-full z-50 transition-all duration-300 ${isMobil
           >
             {navbar.map((item, index) => (
               <ul
-                className="navbar-nav flex flex-col lg_992:flex-row space-y-2 lg_992:space-y-0 lg_992:space-x-4"
-                key={index}
-              >
+              className={`navbar-nav flex flex-col lg_992:flex-row space-y-2 lg_992:space-y-0 lg_992:space-x-4 ${fontSize}`} // Apply the dynamic font size
+              key={index}
+            >
                 <li className="nav-item ms-0">
                   <Link className="nav-link" to="/" onClick={closeDropdownOnLinkClick}>
                     {t(item.Home)}

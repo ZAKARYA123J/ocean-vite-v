@@ -1,5 +1,6 @@
 
 import styled from "styled-components";
+import React from "react";
 import { Helmet } from 'react-helmet-async';
 // Function to load client data based on the language
 const loadClientData =async (lang) => {
@@ -94,7 +95,7 @@ const ButtonLink = styled(Link)`
   }
 `;
 
-const CourseCard = () => {
+const CourseCard = React.memo(() => {
   const [searchTerm, setSearchTerm] = useState('');
   const [filter, setFilter] = useState('All');
   const { i18n, t } = useTranslation();
@@ -123,9 +124,36 @@ const CourseCard = () => {
     { label: 'Formation', value: 'Formation' },
     { label: 'Language', value: 'Language' }
   ];
+  const [metaData, setMetaData] = useState({
+    title: 'Ocean Connecting',
+    description: '',
+    keywords: '',
+  });
 
+  useEffect(() => {
+    const fetchMetaData = async () => {
+      try {
+        const response = await axios.get(`https://hono-on-vercel123-54cp.vercel.app/api/meta`, {
+          params: {
+            page: 'formation',
+            lang: i18n.language,
+          },
+        });
+        setMetaData(response.data);
+      } catch (error) {
+        console.error('Error fetching metadata:', error);
+      }
+    };
+
+    fetchMetaData();
+  }, [i18n.language]);
   return (
     <>
+    <Helmet>
+        <title>{metaData.title || 'Ocean Connecting'}</title> 
+        <meta name="description" content={metaData.description} /> 
+        <meta name="keywords" content={metaData.keywords }/>
+      </Helmet>
     <section className="relative md:py-24 py-16" id="blog">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-1 pb-6 text-center">
@@ -173,6 +201,6 @@ const CourseCard = () => {
     </section>
     </>
   );
-};
+});
 
 export default CourseCard;

@@ -14,7 +14,7 @@ const loadClientData = (lang) => {
   }
 };
 
-const ServicesSection = () => {
+const ServicesSection = React.memo(() => {
   const [serviceData, setServiceData] = useState([]);
   const [loading, setLoading] = useState(true);
   const { i18n, t } = useTranslation();
@@ -113,6 +113,6 @@ const ServicesSection = () => {
       </div> ))}
     </section>
   );
-};
+});
 
 export default ServicesSection;
