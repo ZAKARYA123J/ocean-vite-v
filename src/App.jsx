@@ -15,7 +15,7 @@ import ContractPage from "./components/ContractPage";
 import LanguagesPage from "./components/LanguagesPage";
 import { HelmetProvider } from "react-helmet-async";
 import { AnimatePresence, motion } from "framer-motion";
-import { ImageProvider } from "./components/ImageContext.jsx";
+
 import { Analytics } from "@vercel/analytics/react"
 
 import TeamGlass from "./components/TeamGlass";
@@ -50,7 +50,7 @@ const App=React.memo( function App() {
   };
 
   return (
-    <ImageProvider>
+    
     <HelmetProvider>
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
@@ -201,7 +201,6 @@ const App=React.memo( function App() {
       </AnimatePresence>
      
     </HelmetProvider>
-    </ImageProvider>
   );
 })
 

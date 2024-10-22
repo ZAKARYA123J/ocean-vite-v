@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+
 import { IconContext } from "react-icons";
 import { FaReact, FaNodeJs, FaWordpress, FaCheckCircle } from "react-icons/fa";
 import {

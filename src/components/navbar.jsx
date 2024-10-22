@@ -2,7 +2,7 @@
 
 import { Link as ScrollLink } from "react-scroll";
 import LanguageSwitcher from "./LanguageSwitcher";
-import img from './ocean3.png';
+import img from ".././assets/images/ocean3.png"
 import { useTranslation } from "react-i18next";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { motion } from "framer-motion";
