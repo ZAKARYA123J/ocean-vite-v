@@ -58,6 +58,7 @@ export default defineConfig({
           },  
         },  
       ],  
+      outputDir: './src/assets/images',
     }),  
    
     compression({  
@@ -66,6 +67,7 @@ export default defineConfig({
       threshold: 10240, // Taille minimale pour compression  
       algorithm: 'gzip', // Algorithme de compression  
       ext: '.gz', // Extension pour fichiers compressés  
+      outputDir: './src/assets/images',
     }),  
     visualizer({  
       open: true, // Ouvrir automatiquement le visualiseur dans le navigateur  
