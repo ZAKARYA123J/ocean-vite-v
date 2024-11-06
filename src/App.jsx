@@ -15,9 +15,10 @@ import ContractPage from "./components/ContractPage";
 import LanguagesPage from "./components/LanguagesPage";
 import { HelmetProvider } from "react-helmet-async";
 import { AnimatePresence, motion } from "framer-motion";
-
+import ReactGa from 'react-ga'
 import { Analytics } from "@vercel/analytics/react"
-
+const TRACKING_ID="9910864206"
+ReactGa.initialize(TRACKING_ID)
 import TeamGlass from "./components/TeamGlass";
 const App=React.memo( function App() {
   const location = useLocation();
