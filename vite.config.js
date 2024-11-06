@@ -10,7 +10,8 @@ export default defineConfig({
   base: '/', // base path  
   plugins: [  
     react(), 
-    Sitemap({ hostname: 'https://www.oceanconnecting.ma' }),
+    Sitemap({ hostname: 'https://oceanconnecting.ma' }),
+
     AutoImport({
       // Targets the libraries you want to auto-import from
       imports: [
@@ -26,50 +27,50 @@ export default defineConfig({
       },
     }), 
     Inspect(),  
-    imagemin({  
-      verbose: true, // Afficher un log dans la console pour le débogage  
-      disable: false, // Vrais si vous souhaitez désactiver en mode développement  
-      plugins: [  
-        {  
-          // Configuration pour JPEG  
-          name: 'imagemin-mozjpeg',  
-          options: {  
-            quality: 75,  
-          },  
-        },  
-        {  
-          // Configuration pour PNG  
-          name: 'imagemin-pngquant',  
-          options: {  
-            quality: [0.6, 0.8],  
-          },  
-        },  
-        {  
-          // Configuration pour GIF  
-          name: 'imagemin-gifsicle',  
-          options: {  
-            optimizationLevel: 2,  
-          },  
-        },  
-        {  
-          // Configuration pour WebP  
-          name: 'imagemin-webp',  
-          options: {  
-            quality: 75,  
-          },  
-        },  
-      ],  
-      outputDir: './src/assets/images',
-    }),  
+    // imagemin({  
+    //   verbose: true, // Afficher un log dans la console pour le débogage  
+    //   disable: false, // Vrais si vous souhaitez désactiver en mode développement  
+    //   plugins: [  
+    //     {  
+    //       // Configuration pour JPEG  
+    //       name: 'imagemin-mozjpeg',  
+    //       options: {  
+    //         quality: 75,  
+    //       },  
+    //     },  
+    //     {  
+    //       // Configuration pour PNG  
+    //       name: 'imagemin-pngquant',  
+    //       options: {  
+    //         quality: [0.6, 0.8],  
+    //       },  
+    //     },  
+    //     {  
+    //       // Configuration pour GIF  
+    //       name: 'imagemin-gifsicle',  
+    //       options: {  
+    //         optimizationLevel: 2,  
+    //       },  
+    //     },  
+    //     {  
+    //       // Configuration pour WebP  
+    //       name: 'imagemin-webp',  
+    //       options: {  
+    //         quality: 75,  
+    //       },  
+    //     },  
+    //   ],  
+    //   outputDir: './src/assets/images',
+    // }),  
    
-    compression({  
-      verbose: true, // Log messages when files are compressed  
-      disable: false, // Set to true to disable compression  
-      threshold: 10240, // Taille minimale pour compression  
-      algorithm: 'gzip', // Algorithme de compression  
-      ext: '.gz', // Extension pour fichiers compressés  
-      outputDir: './src/assets/images',
-    }),  
+    // compression({  
+    //   verbose: true, // Log messages when files are compressed  
+    //   disable: false, // Set to true to disable compression  
+    //   threshold: 10240, // Taille minimale pour compression  
+    //   algorithm: 'gzip', // Algorithme de compression  
+    //   ext: '.gz', // Extension pour fichiers compressés  
+    //   outputDir: './src/assets/images',
+    // }),  
     visualizer({  
       open: true, // Ouvrir automatiquement le visualiseur dans le navigateur  
       filename: 'stats.html', // Fichier de sortie du visuel  
