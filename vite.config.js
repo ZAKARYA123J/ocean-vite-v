@@ -4,12 +4,13 @@ import Inspect from 'vite-plugin-inspect';
 import { visualizer } from 'rollup-plugin-visualizer';  
 import compression from 'vite-plugin-compression';  
 import imagemin from 'vite-plugin-imagemin';  
+import Sitemap from 'vite-plugin-sitemap'
 import AutoImport from 'unplugin-auto-import/vite';
 export default defineConfig({  
   base: '/', // base path  
   plugins: [  
     react(), 
-
+    Sitemap({ hostname: 'https://www.oceanconnecting.ma' }),
     AutoImport({
       // Targets the libraries you want to auto-import from
       imports: [
