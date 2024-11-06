@@ -5,6 +5,8 @@ import './index.css'
 import { BrowserRouter } from 'react-router-dom'
 import { HelmetProvider } from 'react-helmet-async'
 import { SpeedInsights } from '@vercel/speed-insights/react';
+import ReactGa from 'react-ga'
+ReactGa.initialize('G-G1FEX4QL50')
 import './components/i18n'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
