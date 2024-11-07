@@ -6,10 +6,22 @@ import compression from 'vite-plugin-compression';
 import imagemin from 'vite-plugin-imagemin';  
 import Sitemap from 'vite-plugin-sitemap'
 import AutoImport from 'unplugin-auto-import/vite';
+import imagePresets, { widthPreset } from 'vite-plugin-image-presets'
 export default defineConfig({  
   base: '/', // base path  
   plugins: [  
     react(), 
+    imagePresets({
+      thumbnail: widthPreset({
+        class: 'img thumb',
+        loading: 'lazy',
+        widths: [48, 96],
+        formats: {
+          webp: { quality: 50 },
+          jpg: { quality: 70 },
+        },
+      }),
+    }),
     Sitemap({ hostname: 'https://oceanconnecting.ma' }),
 
     AutoImport({
