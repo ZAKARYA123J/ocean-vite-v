@@ -420,7 +420,7 @@ export const serviceDataFR = [
         para5: "Valeur Ajoutée",
         desc_para5: "Notre approche personnalisée et notre expertise technique garantissent des résultats qui non seulement répondent à vos attentes mais les dépassent, en offrant un site web fonctionnel, esthétiquement plaisant et optimisé pour les moteurs de recherche.",
         Bouton: "Apprendre encore plus",
-        link: "/developpement-services-agadir" ,
+        link: "https://www.oceanconnecting.dev" ,
 
     },
     {

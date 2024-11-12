@@ -387,7 +387,7 @@ link: "/nettoyage-facades-agadir"
         para5: "القيمة المضافة",
         desc_para5: "تضمن مقاربتنا الشخصية وخبرتنا التقنية تحقيق نتائج لا تقتصر على تلبية توقعاتك بل تتجاوزها، من خلال تقديم موقع ويب وظيفي، وجمالي، ومحسن لمحركات البحث.",
         Bouton : "تعرف أكثر",
-        link: "/developpement-services-agadir" ,
+        link: "https://www.oceanconnecting.dev" ,
 
     },
     {

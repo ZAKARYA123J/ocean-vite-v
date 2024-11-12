@@ -395,7 +395,7 @@ export const serviceDataEN = [
         para5: "Added Value",
         desc_para5: "Our personalized approach and technical expertise ensure results that not only meet but exceed your expectations, offering a functional, aesthetically pleasing, and search-engine-optimized website.",
         Bouton : "Learn more",
-        link: "/developpement-services-agadir" ,
+        link: "https://www.oceanconnecting.dev" ,
     },
     {
         id: 5,
