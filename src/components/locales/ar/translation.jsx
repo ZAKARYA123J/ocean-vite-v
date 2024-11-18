@@ -109,7 +109,7 @@ export const blogDataAR = [
         button:"اقرأ المزيد",
         reserver: "للحجز",
         show:"إظهار الكل",
-        Link:"linguistique-agadir" 
+        Link:"https://oceanconnecting.com" 
     },
     {
         id: 2,

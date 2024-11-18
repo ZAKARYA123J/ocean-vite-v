@@ -126,7 +126,7 @@ export const blogDataFR = [
         data: "Pour chaque cours que vous terminez, vous recevrez une certification que vous pourrez partager sur vos réseaux sociaux (par exemple, LinkedIn). Chaque certification a un numéro d'authentification unique qui permet de la vérifier.",
         reserver: "Réservé",
         show: "Tout afficher",
-        Link:"linguistique-agadir" 
+        Link:"https://oceanconnecting.com" 
     },
     {
         id: 2,

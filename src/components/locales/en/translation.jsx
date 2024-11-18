@@ -129,7 +129,7 @@ export const blogDataEN = [
         type: 'language',
         button: "Learn more",
         show: "show all",
-        Link:"linguistique-agadir" 
+        Link:"https://oceanconnecting.com" 
     },
     {
         id: 2,
