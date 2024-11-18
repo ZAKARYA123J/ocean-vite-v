@@ -219,6 +219,7 @@ className={`navbar fixed top-0 w-full z-50 transition-all duration-300 ${isMobil
                           className="nav-link transition duration-200 ease-in-out hover:bg-gray-100 p-2 rounded-md"
                           to={skill.link}
                           onClick={closeDropdownOnLinkClick}  // Fermer le dropdown après le clic
+                           target="_blank"
                         >
                           {skill.title}
                         </Link>

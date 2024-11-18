@@ -82,6 +82,7 @@ const Services = () => {
               className="card-wrapper"
               data-aos="fade-up"
               data-aos-delay={skill.aosDelay}
+            target="_blank"
             >
               <div className="card">
                 <div className="card-image">
