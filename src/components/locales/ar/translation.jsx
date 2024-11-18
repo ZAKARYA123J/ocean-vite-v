@@ -348,7 +348,7 @@ export const serviceDataAR = [
         para5: "القيمة المضافة",
         desc_para5: "تضمن خبرتنا في تنظيف الواجهات نتائج طويلة الأمد وتدخل سريع، مع احترام أعلى المعايير البيئية والأمنية.",
         Bouton : "تعرف أكثر",
-link: "/nettoyage-facades-agadir"
+link: "https://oceanconnecting.net"
     },
     {
         id: 3,
@@ -426,6 +426,11 @@ link: "/nettoyage-facades-agadir"
         Bouton : "تعرف أكثر",
         desc_para5: "Our expertise in international recruitment allows us to find talent suited to your company's specific requirements, while offering personalized service and support throughout the recruitment process to ensure a successful integration.",
         link:"/soins-infirmiers-agadir",
+    },
+    {
+        id: 7,
+        title: "تعلم اللغات",
+        link:"https://oceanconnecting.com",
     }
 ]
 export const TitleAR=[

@@ -380,7 +380,7 @@ export const serviceDataFR = [
         para5: "Valeur Ajoutée",
         desc_para5: "Notre expertise en nettoyage des façades garantit des résultats durables et une intervention rapide, tout en respectant les normes environnementales et de sécurité les plus strictes.",
         Bouton: "Apprendre encore plus",
-        link: "/nettoyage-facades-agadir"
+        link: "https://oceanconnecting.net"
     },
 
     {
@@ -461,6 +461,11 @@ export const serviceDataFR = [
         Bouton: "Apprendre encore plus",
         desc_para5: "Our expertise in international recruitment allows us to find talent suited to your company's specific requirements, while offering personalized service and support throughout the recruitment process to ensure a successful integration.",
         link:"/soins-infirmiers-agadir",
+    },
+    {
+        id: 7,
+        title: "Apprendre la langue",
+        link:"https://oceanconnecting.com",
     }
 ]
 export const Titlefr = [

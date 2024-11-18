@@ -95,7 +95,7 @@ export default function Navbar() {
   };
   const isArabic = i18n.language === 'ar';
   const fontSize = isArabic ? 'font-bold' : 'text-base';
-const limitedItems=serviceData.slice(1,6)
+const limitedItems=serviceData.slice(1,7)
   return (
     <>
       <style>{`
@@ -213,7 +213,7 @@ className={`navbar fixed top-0 w-full z-50 transition-all duration-300 ${isMobil
 </div>
 
                   <ul className={`bg-white text-dark shadow-lg rounded-lg p-4 ${dropdowns === "servicesOpen" ? "show" : ""}`}>
-                    {limitedItems.map((skill, idx) => (
+                    {serviceData.map((skill, idx) => (
                       <li className="nav-item" key={idx}>
                         <Link
                           className="nav-link transition duration-200 ease-in-out hover:bg-gray-100 p-2 rounded-md"
