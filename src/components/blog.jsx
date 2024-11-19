@@ -109,22 +109,47 @@ const Blogs=React.memo( function Blogs() {
               </div>
               <SlideInContent className="p-6">
         
+              {index === 0 ? (
+  <a
+    href="https://oceanconnecting.com"
+    target="_blank"
+  
+  >
+    <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-blue-500 transition-colors">
+      {t(item.title)}
+    </h4>
+  </a>
+) : (
+  <Link
+    to={`/formation-professionnelle-agadir/${item.Link}`}
+    className="block"
+  >
+    <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-blue-500 transition-colors">
+      {t(item.title)}
+    </h4>
+  </Link>
+)}
 
-                <Link to={`/formation-professionnelle-agadir/${item.Link}`} className="block">
-                  <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-blue-500 transition-colors">
-                    {t(item.title)}
-                  </h4>
-                </Link>
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
                   {t(item.desc)}
                 </p>
 
                 <div className="flex items-center justify-between">
+                {index === 0 ? (
+          <a
+            href="https://oceanconnecting.com"
+            target="_blank"
+            rel="noopener noreferrer" 
+           className="bg-blue-500 text-white rounded-full px-4 py-2 mt-2 hover:bg-blue-600 transition"
+          >
+            {t(item.button)} <i className="mdi mdi-chevron-right align-middle"></i>
+          </a>
+        ) : (
                   <Link to={`/formation-professionnelle-agadir/${item.Link}`}>
                     <button className="bg-blue-500 text-white rounded-full px-4 py-2 mt-2 hover:bg-blue-600 transition">
                       {t(item.button)} <i className="mdi mdi-chevron-right align-middle ml-1"></i>
                     </button>
-                  </Link>
+                  </Link>)}
                   
                   {/* Share Button */}
                   <ShareButton onClick={() => handleShare(item)} aria-label="Share">

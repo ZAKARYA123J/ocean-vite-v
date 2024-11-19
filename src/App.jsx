@@ -18,7 +18,6 @@ import ReactGa from 'react-ga'
 import { Analytics } from "@vercel/analytics/react"
 const TRACKING_ID="G-7VD9KSTCK9"
 ReactGa.initialize(TRACKING_ID)
-import TeamGlass from "./components/TeamGlass";
 console.log('er')
 const App=React.memo( function App() {
   const location = useLocation();
@@ -67,7 +66,7 @@ const App=React.memo( function App() {
                 variants={pageVariants}
                 transition={pageTransition}
               >
-                <Index />
+                <Index/>
               </motion.div>
             }
           />
@@ -177,7 +176,7 @@ const App=React.memo( function App() {
          
           <Route path="/soins-infirmiers-agadir" element={<TeamNurse />} />
           <Route path="/recrutement-international-agadir" element={<ContractPage />} />
-          <Route path="/nettoyage-facades-agadir" element={<TeamGlass />} />
+        
           <Route
             path="/languages"
             element={
