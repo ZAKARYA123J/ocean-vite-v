@@ -182,21 +182,39 @@ const CourseCard = React.memo(() => {
 
         {/* Course Cards Grid */}
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-6 gap-6">
-          {filteredBlogData.map((item, index) => (
-            <CardContainer key={index}>
-              <Link to={`/formation-professionnelle-agadir/${item.Link}`}>
-                <CardImage src={item.image} alt={item.title} />
-              </Link>
-              <div className="mt-4">
-                <Title>{t(item.title)}</Title>
-                <Description>{t(item.desc)}</Description>
-                <ButtonLink to={`/formation-professionnelle-agadir/${item.Link}`}>
-                  {t(item.button)} <i className="mdi mdi-chevron-right align-middle"></i>
-                </ButtonLink>
-              </div>
-            </CardContainer>
-          ))}
-        </div>
+  {filteredBlogData.map((item, index) => (
+    <CardContainer key={index}>
+      {index === 0 ? (
+        <a href="https://oceanconnecting.com" target="_blank" rel="noopener noreferrer">
+          <CardImage src={item.image} alt={item.title} />
+        </a>
+      ) : (
+        <Link to={`/formation-professionnelle-agadir/${item.Link}`}>
+          <CardImage src={item.image} alt={item.title} />
+        </Link>
+      )}
+      <div className="mt-4">
+        <Title>{t(item.title)}</Title>
+        <Description>{t(item.desc)}</Description>
+        {index === 0 ? (
+          <a
+            href="https://oceanconnecting.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 font-bold hover:underline"
+          >
+            {t(item.button)} <i className="mdi mdi-chevron-right align-middle"></i>
+          </a>
+        ) : (
+          <ButtonLink to={`${item.Link}`}>
+            {t(item.button)} <i className="mdi mdi-chevron-right align-middle"></i>
+          </ButtonLink>
+        )}
+      </div>
+    </CardContainer>
+  ))}
+</div>
+
       </div>
     </section>
     </>
