@@ -9,7 +9,6 @@ import Jobs from "./components/recruitment/Jobs";
 import IndexFive from "./components/index-fivePage.jsx";
 import Gallery from "./components/Gallery/gallery";
 import GalleryDetail from "./components/Gallery/detailgallery";
-import TeamPage from "./components/TeamPage";
 import TeamNurse from "./components/TeamNurse";
 import ContractPage from "./components/ContractPage";
 import LanguagesPage from "./components/LanguagesPage";
@@ -175,7 +174,7 @@ const App=React.memo( function App() {
               </motion.div>
             }
           />
-          <Route path="/developpement-services-agadir" element={<TeamPage />} />
+         
           <Route path="/soins-infirmiers-agadir" element={<TeamNurse />} />
           <Route path="/recrutement-international-agadir" element={<ContractPage />} />
           <Route path="/nettoyage-facades-agadir" element={<TeamGlass />} />

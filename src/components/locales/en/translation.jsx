@@ -30,12 +30,7 @@ import service3 from '../../../assets/images/service/service3.png'
 import service4 from '../../../assets/images/service/service4.png'
 import service5 from '../../../assets/images/service/service5.png'
 
-import company1 from '../../../assets/images/team/amazon.svg'
-import company2 from '../../../assets/images/team/google.svg'
-import company3 from '../../../assets/images/team/lenovo.svg'
-import company4 from '../../../assets/images/team/paypal.svg'
-import company5 from '../../../assets/images/team/shopify.svg'
-import company6 from '../../../assets/images/team/spotify.svg'
+
 import belgium from '../../../assets/images/job/belgium.png'
 import allemagne from '../../../assets/images/job/germany.png'
 import croatie from '../../../assets/images/job/croatie.png'
@@ -857,4 +852,4 @@ export const footerDataEn = {
      
 
 
-export const companyLogo = [company1, company2, company3, company4, company5, company6]
+
