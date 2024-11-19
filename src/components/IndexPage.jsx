@@ -13,9 +13,9 @@ import "aos/dist/aos.css";
 import styled from "styled-components";
 import { Helmet } from "react-helmet-async";
 import LazyLoad from 'react-lazyload';
-const heroImage1 = 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Site%20ocean%2Fhome%2Fservice.png?alt=media&token=0f3a5398-4902-45d4-96bc-83b4055d70b3';
-const heroImage2 = 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Site%20ocean%2Fhome%2Fservice1.png?alt=media&token=c5ed81ee-d9f8-4faa-84a8-3aa3adef4585';
-const heroImage4 = 'https://firebasestorage.googleapis.com/v0/b/oceangallery-d06ae.appspot.com/o/Site%20ocean%2Fhome%2Fservice2.png?alt=media&token=c9ddbf94-2f58-4c5e-b0e1-4a6a92778f8d';
+import heroImage1 from "../assets/images/home/nurse.png"
+import heroImage4 from "../assets/images/home/dev.png"
+import heroImage2 from "../assets/images/home/glasse.png"
 import axios from 'axios'
 // Styled Components
 

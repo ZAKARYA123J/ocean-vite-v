@@ -113,7 +113,7 @@ const Blogs=React.memo( function Blogs() {
   <a
     href="https://oceanconnecting.com"
     target="_blank"
-  
+  rel="noopener" noreferrer
   >
     <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-blue-500 transition-colors">
       {t(item.title)}
