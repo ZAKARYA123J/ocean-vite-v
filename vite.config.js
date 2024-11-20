@@ -11,17 +11,7 @@ export default defineConfig({
   base: '/', // base path  
   plugins: [  
     react(), 
-    imagePresets({
-      thumbnail: widthPreset({
-        class: 'img thumb',
-        loading: 'lazy',
-        widths: [48, 96],
-        formats: {
-          webp: { quality: 50 },
-          jpg: { quality: 70 },
-        },
-      }),
-    }),
+  
     Sitemap({ hostname: 'https://oceanconnecting.ma' }),
 
     AutoImport({
@@ -38,63 +28,11 @@ export default defineConfig({
         filepath: './.eslintrc-auto-import.json', // Where the config is saved
       },
     }), 
-    Inspect(),  
-    // imagemin({  
-    //   verbose: true, // Afficher un log dans la console pour le débogage  
-    //   disable: false, // Vrais si vous souhaitez désactiver en mode développement  
-    //   plugins: [  
-    //     {  
-    //       // Configuration pour JPEG  
-    //       name: 'imagemin-mozjpeg',  
-    //       options: {  
-    //         quality: 75,  
-    //       },  
-    //     },  
-    //     {  
-    //       // Configuration pour PNG  
-    //       name: 'imagemin-pngquant',  
-    //       options: {  
-    //         quality: [0.6, 0.8],  
-    //       },  
-    //     },  
-    //     {  
-    //       // Configuration pour GIF  
-    //       name: 'imagemin-gifsicle',  
-    //       options: {  
-    //         optimizationLevel: 2,  
-    //       },  
-    //     },  
-    //     {  
-    //       // Configuration pour WebP  
-    //       name: 'imagemin-webp',  
-    //       options: {  
-    //         quality: 75,  
-    //       },  
-    //     },  
-    //   ],  
-    //   outputDir: './src/assets/images',
-    // }),  
    
-    // compression({  
-    //   verbose: true, // Log messages when files are compressed  
-    //   disable: false, // Set to true to disable compression  
-    //   threshold: 10240, // Taille minimale pour compression  
-    //   algorithm: 'gzip', // Algorithme de compression  
-    //   ext: '.gz', // Extension pour fichiers compressés  
-    //   outputDir: './src/assets/images',
-    // }),  
-    visualizer({  
-      open: true, // Ouvrir automatiquement le visualiseur dans le navigateur  
-      filename: 'stats.html', // Fichier de sortie du visuel  
-      gzipSize: true, // Afficher la taille de la bundle gzippée  
-      brotliSize: true, // Afficher la taille de la bundle Brotli-compressée  
-    }),  
+
+    
   ],  
-  resolve: {  
-    alias: {  
-      '@': '/src', // alias pour le dossier src 
-    },  
-  },  
+ 
   build: {  
     rollupOptions: {  
       plugins: [  
