@@ -16,9 +16,8 @@ import { HelmetProvider } from "react-helmet-async";
 import { AnimatePresence, motion } from "framer-motion";
 import ReactGa from 'react-ga'
 import { Analytics } from "@vercel/analytics/react"
-const TRACKING_ID="G-7VD9KSTCK9"
-ReactGa.initialize(TRACKING_ID)
-console.log('er')
+
+
 const App=React.memo( function App() {
   const location = useLocation();
   const pageVariants = {
